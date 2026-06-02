@@ -74,8 +74,8 @@ section { padding:104px 0; }
 .arrow-link:hover { gap:12px; }
 
 /* HERO */
-.hero { padding-top:72px; min-height:100vh; display:grid; grid-template-columns:55% 45%; }
-.hero-left { background:var(--black); padding:0 72px; display:flex; flex-direction:column; justify-content:center; position:relative; overflow:hidden; min-height:calc(100vh - 72px); }
+.hero { padding-top:72px; min-height:60vh; display:grid; grid-template-columns:55% 45%; }
+.hero-left { background:var(--black); padding:0 72px; display:flex; flex-direction:column; justify-content:flex-start; padding-top:80px; position:relative; overflow:hidden; min-height:calc(100vh - 72px); }
 .hero-left::after { content:''; position:absolute; inset:0; background:repeating-linear-gradient(-55deg,transparent,transparent 40px,rgba(255,255,255,0.012) 40px,rgba(255,255,255,0.012) 41px); pointer-events:none; }
 .hero-eyebrow { display:flex; align-items:center; gap:16px; margin-bottom:36px; }
 .hero-eyebrow-rule { width:32px; height:1px; background:var(--gold); }
@@ -85,14 +85,14 @@ section { padding:104px 0; }
 .hero-proposition { font-size:14px; line-height:1.8; color:rgba(255,255,255,0.65); max-width:420px; margin-bottom:16px; font-weight:400; position:relative; z-index:1; border-left:1px solid var(--gold); padding-left:20px; }
 .hero-body { font-size:13px; line-height:1.85; color:rgba(255,255,255,0.4); max-width:400px; margin-bottom:48px; font-weight:300; position:relative; z-index:1; }
 .hero-actions { display:flex; gap:28px; align-items:center; position:relative; z-index:1; }
-.hero-right { background:var(--warm-grey); display:flex; flex-direction:column; justify-content:flex-end; padding:72px 56px 64px; position:relative; overflow:hidden; }
+.hero-right { background:var(--warm-grey); display:flex; flex-direction:column; justify-content:center; padding:48px 56px; position:relative; overflow:hidden; }
 .hero-right-logo { position:absolute; top:50%; left:50%; transform:translate(-50%,-58%); width:72%; opacity:0.07; pointer-events:none; }
 .hero-pillars { position:relative; z-index:1; }
-.pillar-item { border-top:1px solid var(--mid-grey); padding:20px 0; display:grid; grid-template-columns:36px 1fr; gap:20px; align-items:start; }
+.pillar-item { border-top:1px solid var(--mid-grey); padding:24px 0; display:grid; grid-template-columns:36px 1fr; gap:20px; align-items:start; }
 .pillar-item:last-child { border-bottom:1px solid var(--mid-grey); }
 .pillar-num { font-family:'Cormorant Garamond',serif; font-size:13px; color:var(--gold); padding-top:2px; }
-.pillar-name { font-size:11px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--black); margin-bottom:4px; }
-.pillar-desc { font-size:12px; color:var(--text-secondary); line-height:1.65; font-weight:300; }
+.pillar-name { font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--black); margin-bottom:6px; }
+.pillar-desc { font-size:14px; color:var(--text-secondary); line-height:1.7; font-weight:300; }
 
 /* PROBLEM */
 #problem { background:var(--black); padding:80px 0; }
@@ -448,8 +448,8 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         <div class="matthew-body">
           <p>Over twenty years in financial services spanning financial planning, asset management, business advisory and strategic consultancy. Matthew began his career as a financial adviser before moving into asset management with a merchant bank, working on tax-advantaged investments including VCTs, EIS and inheritance tax planning.</p>
           <p>He works directly with founders and leadership teams of growing businesses, combining technical expertise with practical delivery to create outcomes that are measurable from the outset.</p>
-          <p><strong>The work is personal.</strong> At 19, Matthew was diagnosed with leukaemia and became the second person in the UK to receive a stem cell transplant. That experience shaped a particular clarity about what matters, what is worth building, and the importance of doing work that creates genuine value for others.</p>
           <p>Building automated digital marketing workflows since 2013, with hands-on experience of Infusionsoft and Go High Level. Finch Theory engagements can include workflow design and automation alongside advisory work where relevant.</p>
+          <p><strong>The work is personal.</strong> At 19, Matthew was diagnosed with leukaemia and became the second person in the UK to receive a stem cell transplant. That experience shaped a particular clarity about what matters, what is worth building, and the importance of doing work that creates genuine value for others.</p>
         </div>
         <div class="matthew-facts">
           <div class="matthew-fact"><div class="matthew-fact-rule"></div><p>Ambassador for the Royal Marsden Cancer Charity in Surrey</p></div>
