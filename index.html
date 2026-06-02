@@ -41,6 +41,23 @@ body::before {
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
 }
 
+
+/* WHY FINCH THEORY */
+#why { background: var(--black); }
+#why .section-title { color: var(--white); }
+.why-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+.why-left {}
+.why-body p { font-size:14px; color:rgba(255,255,255,0.5); line-height:1.9; font-weight:300; margin-bottom:18px; }
+.why-right {}
+.why-concept { display:flex; flex-direction:column; gap:0; }
+.why-concept-item { border-top:1px solid rgba(255,255,255,0.07); padding:24px 0; display:grid; grid-template-columns:40px 1fr; gap:20px; align-items:start; }
+.why-concept-item:last-child { border-bottom:1px solid rgba(255,255,255,0.07); }
+.why-concept-num { font-family:'Cormorant Garamond',serif; font-size:22px; font-style:italic; font-weight:400; color:var(--gold); line-height:1; padding-top:2px; }
+.why-concept-name { font-size:11px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--white); margin-bottom:7px; }
+.why-concept-desc { font-size:12.5px; color:rgba(255,255,255,0.4); line-height:1.8; font-weight:300; }
+.why-closing { margin-top:32px; padding:24px 28px; border-left:1px solid var(--gold); }
+.why-closing p { font-family:'Cormorant Garamond',serif; font-size:20px; font-style:italic; font-weight:400; line-height:1.5; color:rgba(255,255,255,0.6); }
+
 /* NAV */
 nav {
   position:fixed; top:0; left:0; right:0; z-index:100;
@@ -375,7 +392,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
   .hero-left { padding:64px 32px; min-height:70vh; }
   .hero-headline { font-size:44px; }
   .hero-right { padding:48px 32px; }
-  .about-grid,.matthew-grid,.working-grid { grid-template-columns:1fr; gap:48px; }
+  .about-grid,.matthew-grid,.working-grid,.why-grid { grid-template-columns:1fr; gap:48px; }
   .proof-grid { grid-template-columns:1fr; }
   .proof-outcomes { grid-template-columns:1fr 1fr; gap:32px; }
   .service-row { grid-template-columns:1fr; gap:16px; }
@@ -405,6 +422,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#why">Why Finch Theory</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#insights">Insights</a></li>
     
@@ -417,13 +435,13 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
   <div class="hero-left">
     <div class="hero-eyebrow">
       <div class="hero-eyebrow-rule"></div>
-      <span class="hero-eyebrow-text">Commercial growth consultancy</span>
+      <span class="hero-eyebrow-text">Strategic growth consultancy</span>
     </div>
     <h1 class="hero-headline">
-      Your growth depends on people.
-      <em>We build the infrastructure around them.</em>
+      Unlocking the value hidden within your business.
+      <em>Strategy, relationships and commercial expertise, deployed together.</em>
     </h1>
-    <p class="hero-body">Finch Theory works alongside founders and leadership teams of growing businesses to build the human infrastructure that commercial growth requires — business development, team performance, and the structured deployment of relationship capital.</p>
+    <p class="hero-body">Most businesses are sitting on untapped commercial value. Existing relationships, underused networks, unrealised opportunities. Finch Theory helps founders and leadership teams identify, structure and activate those assets to create measurable growth.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-primary">Start a conversation</a>
       <a href="#about" class="btn-ghost">How we work</a>
@@ -436,21 +454,21 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         <span class="pillar-num">01</span>
         <div>
           <p class="pillar-name">Relationship Capital</p>
-          <p class="pillar-desc">Activating the relationships you have already spent years building into referrals, introductions and new commercial opportunities.</p>
+          <p class="pillar-desc">Transforming existing networks into structured commercial assets: referrals, introductions and strategic partnerships that compound over time.</p>
         </div>
       </div>
       <div class="pillar-item">
         <span class="pillar-num">02</span>
         <div>
           <p class="pillar-name">Workforce Performance</p>
-          <p class="pillar-desc">Reducing the hidden commercial cost of financial pressure on the people who drive your business forward.</p>
+          <p class="pillar-desc">Identifying and removing the hidden commercial cost of financial pressure within your team. Measurable outcomes, not management consultancy.</p>
         </div>
       </div>
       <div class="pillar-item">
         <span class="pillar-num">03</span>
         <div>
           <p class="pillar-name">Fractional BD</p>
-          <p class="pillar-desc">Senior commercial function on a retained or project basis, without the overhead of a full-time hire.</p>
+          <p class="pillar-desc">Senior commercial capability on a retained or project basis, creating opportunities, not just advising on them.</p>
         </div>
       </div>
     </div>
@@ -466,7 +484,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
           <div class="section-eyebrow-rule"></div>
           <span class="section-eyebrow-text">About</span>
         </div>
-        <h2 class="section-title">Business performance, relationship capital and strategic partnerships</h2>
+        <h2 class="section-title">We create commercial opportunities. Not just advice.</h2>
         <div class="about-body">
           <p>Most organisations invest heavily in marketing, networking and lead generation, yet overlook two of the greatest influences on business performance: the relationships they have already spent years building, and the financial pressures affecting the people who drive the business forward.</p>
           <div class="about-pull">"I help organisations improve performance and accelerate growth by focusing on both."</div>
@@ -495,6 +513,56 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
   </div>
 </section>
 
+
+<!-- WHY FINCH THEORY -->
+<section id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-left">
+        <div class="section-eyebrow">
+          <div class="section-eyebrow-rule"></div>
+          <span class="section-eyebrow-text">Why Finch Theory</span>
+        </div>
+        <h2 class="section-title">The name has a theory behind it.</h2>
+        <div class="why-body">
+          <p>In 1835, Charles Darwin sailed to the Galápagos Islands aboard the HMS Beagle. What he found there changed how we understand life itself.</p>
+          <p>Across the islands, he collected multiple species of finch, closely related yet strikingly different. Each had evolved a distinct beak shape, precisely suited to the food sources available on its particular island. Crushing hard seeds. Probing cactus flowers. Extracting insects from bark.</p>
+          <p>The birds had not been given different tools. They had adapted the tools they already possessed to find and unlock value in their specific environment.</p>
+          <p>Darwin called it adaptive radiation. We call it the operating principle behind every successful business.</p>
+        </div>
+      </div>
+      <div class="why-right">
+        <div class="why-concept">
+          <div class="why-concept-item">
+            <div class="why-concept-num">I</div>
+            <div>
+              <p class="why-concept-name">Adaptation</p>
+              <p class="why-concept-desc">The finches did not change their environment. They found ways to extract value from it that others had missed. Every business contains latent value waiting to be unlocked by the right approach.</p>
+            </div>
+          </div>
+          <div class="why-concept-item">
+            <div class="why-concept-num">II</div>
+            <div>
+              <p class="why-concept-name">Specialisation</p>
+              <p class="why-concept-desc">Each species developed precise capability for a specific opportunity. Finch Theory brings exactly the right expertise to each engagement, not a generalist view, but a targeted one.</p>
+            </div>
+          </div>
+          <div class="why-concept-item">
+            <div class="why-concept-num">III</div>
+            <div>
+              <p class="why-concept-name">Evolution</p>
+              <p class="why-concept-desc">Businesses that grow are not always the strongest. They are the ones that adapt fastest. The theory behind the name is a practical commitment to finding what works and building on it.</p>
+            </div>
+          </div>
+        </div>
+        <div class="why-closing">
+          <p>That is the Finch Theory. Not a philosophy. An operating method.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- MATTHEW -->
 <section id="matthew">
   <div class="container">
@@ -514,7 +582,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         <p class="matthew-title">Founder · Finch Theory</p>
         <div class="matthew-body">
           <p>Over twenty years in financial services spanning financial planning, asset management, business advisory and long-term wealth strategy. Matthew began his career as a financial adviser before moving into asset management with a merchant bank, working on tax-advantaged investments including VCTs, EIS and inheritance tax planning.</p>
-          <p>He works closely with business owners and leadership teams to bring greater structure and clarity to both their commercial and personal financial position — combining technical expertise with practical delivery to create lasting outcomes.</p>
+          <p>He works closely with business owners and leadership teams to bring greater structure and clarity to both their commercial and personal financial position, combining technical expertise with practical delivery to create lasting outcomes.</p>
           <p><strong>The work is personal.</strong> At 19, Matthew was diagnosed with leukaemia and became the second person in the UK to receive a stem cell transplant. That experience shaped a particular clarity about what matters, what is worth building, and the importance of doing work that creates genuine value for others.</p>
         </div>
         <div class="matthew-facts">
