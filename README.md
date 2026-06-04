@@ -11,9 +11,12 @@ Hosted on GitHub Pages with a custom domain. DNS configured at 123-reg.
 ## Structure
 
 ```
-index.html   — full site, all assets embedded
+index.html   — full site, all assets embedded (mobile optimised)
 CNAME        — custom domain for GitHub Pages
 .nojekyll    — prevents Jekyll processing
+robots.txt   — search and AI crawler directives
+sitemap.xml  — sitemap submitted to Google Search Console
+llms.txt     — AI discoverability (ChatGPT, Claude, Perplexity)
 ```
 
 ## Updating content
