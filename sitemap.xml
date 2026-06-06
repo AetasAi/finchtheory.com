@@ -7,12 +7,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://finchtheory.com/insights/your-network-is-an-asset.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://finchtheory.com/insights/hidden-cost-of-financial-pressure-in-your-workforce.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -26,6 +20,12 @@
   </url>
   <url>
     <loc>https://finchtheory.com/insights/why-most-bd-pipelines-fail-before-they-start.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://finchtheory.com/insights/your-network-is-an-asset.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
