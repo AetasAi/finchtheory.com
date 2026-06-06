@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 
-# AI crawlers - welcome
 User-agent: GPTBot
 Allow: /
 
@@ -11,10 +10,21 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: GoogleExtendedBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
 User-agent: anthropic-ai
 Allow: /
 
-User-agent: Google-Extended
+User-agent: cohere-ai
 Allow: /
 
 Sitemap: https://finchtheory.com/sitemap.xml
+Sitemap: https://finchtheory.com/llms.txt
+Sitemap: https://finchtheory.com/llms-full.txt
