@@ -386,7 +386,7 @@
 
       <!-- Hidden fields for context -->
       <input type="hidden" name="_subject" value="New enquiry — Finch Theory">
-      <input type="hidden" name="_next" value="https://finchtheory.com/contact.html?submitted=true">
+      
       <input type="text" name="_gotcha" style="display:none">
 
       <!-- GDPR -->
@@ -400,9 +400,7 @@
         <span class="btn-spinner" id="btn-spinner"></span>
       </button>
 
-      <div class="form-message success" id="success-msg">
-        <strong>Thank you — your enquiry has been sent.</strong><br>
-        We will respond within one working day. If your matter is urgent, email Matthew directly at <a href="mailto:matthew@finchtheory.com" style="color:var(--success);">matthew@finchtheory.com</a>.
+      <div class="form-message success" id="success-msg" style="display:none;background:transparent;border:none;padding:0;">
       </div>
       <div class="form-message error" id="error-msg">
         Something went wrong sending your message. Please email us directly at <a href="mailto:matthew@finchtheory.com" style="color:var(--error);">matthew@finchtheory.com</a> and we will respond promptly.
@@ -466,11 +464,7 @@ document.querySelectorAll('.mobile-close').forEach(a => {
 document.getElementById('footer-year').textContent = new Date().getFullYear();
 
 // Check for success redirect
-if (window.location.search.includes('submitted=true')) {
-  document.getElementById('success-msg').style.display = 'block';
-  document.getElementById('contact-form').style.display = 'none';
-  window.history.replaceState({}, '', '/contact.html');
-}
+// No redirect-based success handling — handled in JS fetch callback
 
 // Form validation and submission
 const form = document.getElementById('contact-form');
@@ -538,9 +532,23 @@ form.addEventListener('submit', async (e) => {
     });
 
     if (response.ok) {
-      form.style.display = 'none';
-      successMsg.style.display = 'block';
-      successMsg.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Replace form with full branded thank-you
+      const wrap = document.querySelector('.contact-form-wrap');
+      wrap.innerHTML = `
+        <div style="text-align:center;padding:56px 32px;">
+          <div style="width:56px;height:56px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:22px;color:white;">✓</div>
+          <h2 style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:var(--black);margin-bottom:12px;">Thank you for getting in touch.</h2>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.85;font-weight:300;max-width:420px;margin:0 auto 32px;">Your enquiry has been received. We will respond within one working day — usually sooner.</p>
+          <div style="background:var(--warm-grey);border-left:3px solid var(--gold);padding:20px 24px;text-align:left;margin-bottom:32px;">
+            <p style="font-size:13px;color:var(--text-secondary);line-height:1.8;font-weight:300;margin-bottom:4px;"><strong style="color:var(--black);font-weight:500;">What happens next:</strong></p>
+            <p style="font-size:13px;color:var(--text-secondary);line-height:1.8;font-weight:300;">Matthew will review your enquiry personally and reach out to arrange a short initial conversation — typically 20–30 minutes — to understand your situation before any proposal is discussed.</p>
+          </div>
+          <p style="font-size:12px;color:var(--text-tertiary);margin-bottom:24px;">If your matter is urgent, email directly: <a href="mailto:matthew@finchtheory.com" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-light);">matthew@finchtheory.com</a></p>
+          <a href="/" style="display:inline-block;background:var(--black);color:var(--white);text-decoration:none;font-size:10px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;padding:14px 32px;transition:background 0.2s;">Return to homepage</a>
+          <br><br>
+          <a href="/#insights" style="font-size:11px;color:var(--text-tertiary);text-decoration:none;letter-spacing:0.1em;">Read our Insights while you wait →</a>
+        </div>`;
+      wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
       throw new Error('Server error');
     }
