@@ -172,7 +172,7 @@ Most BD pipelines underperform not because of a lack of effort but because of th
 
 ---
 
-## FREQUENTLY ASKED QUESTIONS
+## Frequently Asked Questions
 
 **Q: What is relationship capital?**  
 A: Relationship capital is the aggregate commercial value embedded in your professional relationships — who you know, the strength and credibility of those connections, and your ability to convert them into commercial outcomes. Unlike financial capital, it sits off the balance sheet, is never audited, and is almost never actively managed.
