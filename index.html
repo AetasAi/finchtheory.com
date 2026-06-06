@@ -153,6 +153,33 @@ section { padding:104px 0; }
 .why-closing { margin-top:32px; padding:24px 28px; border-left:1px solid var(--gold); }
 .why-closing p { font-family:'Cormorant Garamond',serif; font-size:20px; font-style:italic; color:rgba(255,255,255,0.55); line-height:1.5; }
 
+
+/* FIT SECTION */
+#fit { background:var(--black); }
+.fit-intro { max-width:640px; margin-bottom:64px; }
+.fit-intro p { font-size:15px; color:rgba(255,255,255,0.55); line-height:1.9; font-weight:300; }
+.fit-intro p strong { color:rgba(255,255,255,0.85); font-weight:500; }
+.fit-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.08); margin-bottom:56px; }
+.fit-card { background:var(--black); padding:36px 32px; transition:background 0.2s; }
+.fit-card:hover { background:#111; }
+.fit-card-icon { font-family:'Cormorant Garamond',serif; font-size:32px; font-style:italic; color:var(--gold); margin-bottom:14px; font-weight:300; line-height:1; }
+.fit-card-title { font-size:10px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:rgba(255,255,255,0.85); margin-bottom:10px; }
+.fit-card-desc { font-size:12.5px; color:rgba(255,255,255,0.45); line-height:1.8; font-weight:300; }
+.fit-foundation { border-top:1px solid rgba(255,255,255,0.1); padding-top:40px; display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
+.fit-foundation-text h3 { font-family:'Cormorant Garamond',serif; font-size:32px; font-weight:300; color:var(--white); line-height:1.2; margin-bottom:16px; }
+.fit-foundation-text h3 em { font-style:italic; color:rgba(255,255,255,0.4); }
+.fit-foundation-text p { font-size:13.5px; color:rgba(255,255,255,0.5); line-height:1.85; font-weight:300; }
+.fit-foundation-text p strong { color:rgba(255,255,255,0.75); font-weight:500; }
+.fit-not { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); padding:28px 32px; }
+.fit-not-label { font-size:9px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); margin-bottom:16px; }
+.fit-not ul { list-style:none; display:flex; flex-direction:column; gap:10px; }
+.fit-not li { font-size:12.5px; color:rgba(255,255,255,0.45); font-weight:300; line-height:1.6; padding-left:16px; position:relative; }
+.fit-not li::before { content:'—'; position:absolute; left:0; color:rgba(255,255,255,0.2); }
+@media(max-width:900px) {
+  .fit-grid { grid-template-columns:1fr; }
+  .fit-foundation { grid-template-columns:1fr; gap:32px; }
+}
+
 /* WHO WE HELP */
 #who { background:var(--warm-grey); }
 .who-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--mid-grey); border:1px solid var(--mid-grey); margin-top:56px; }
@@ -486,6 +513,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
     <li><a href="#relcap">Relationship Capital</a></li>
     <li><a href="#services">What we do</a></li>
     <li><a href="#why">Why Finch Theory</a></li>
+    <li><a href="#fit">Is this for us?</a></li>
     <li><a href="#who">Who we help</a></li>
     <li><a href="#matthew">About</a></li>
     <li><a href="#insights">Insights</a></li>
@@ -777,6 +805,67 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
   </div>
 </section>
 
+
+<!-- FIT SECTION -->
+<section id="fit">
+  <div class="container">
+    <div class="eyebrow"><div class="eyebrow-rule" style="background:var(--gold);"></div><span class="eyebrow-text" style="color:rgba(255,255,255,0.5);">Is this for us?</span></div>
+    <h2 class="section-title" style="color:var(--white);">Built for the businesses that <em style="font-style:italic;color:rgba(255,255,255,0.35);">do the work.</em></h2>
+    <div class="fit-intro">
+      <p>Finch Theory works with <strong>SMEs and owner-managed businesses</strong> — typically up to 250 people — where the founder or leadership team is still close to the commercial engine. Businesses that are generating revenue, have genuine potential, and need experienced outside thinking to structure the next phase of growth.</p>
+    </div>
+    <div class="fit-grid">
+      <div class="fit-card">
+        <p class="fit-card-icon">01</p>
+        <p class="fit-card-title">SME &amp; owner-managed</p>
+        <p class="fit-card-desc">Founder or director-led businesses up to 250 people. You are close to the business, you know where the problems are, and you want someone who can work at that level — not a consultant who presents a report and leaves.</p>
+      </div>
+      <div class="fit-card">
+        <p class="fit-card-icon">02</p>
+        <p class="fit-card-title">Time-constrained leadership</p>
+        <p class="fit-card-desc">You are running the business as well as trying to grow it. You do not have the bandwidth to build commercial infrastructure from scratch alongside everything else. You need someone who can do it, not advise on it.</p>
+      </div>
+      <div class="fit-card">
+        <p class="fit-card-icon">03</p>
+        <p class="fit-card-title">Not ready for a full-time hire</p>
+        <p class="fit-card-desc">A senior BD or commercial director costs £80,000–£130,000 per year before employment costs. For most SMEs, that is not the right structure at this stage. Fractional engagement gives you the same seniority at a fraction of the commitment.</p>
+      </div>
+      <div class="fit-card">
+        <p class="fit-card-icon">04</p>
+        <p class="fit-card-title">Grown quickly, gaps in the foundations</p>
+        <p class="fit-card-desc">Many businesses grow fast on the strength of their people and relationships — and find later that commercial processes, pipeline structure, and network architecture did not keep pace. The growth was real. The foundations just need catching up.</p>
+      </div>
+      <div class="fit-card">
+        <p class="fit-card-icon">05</p>
+        <p class="fit-card-title">Flexible by design</p>
+        <p class="fit-card-desc">Engagements run on a retained or project basis, defined by outcomes rather than hours. Typically six to twelve weeks for a project engagement, six to twelve months for a retained relationship. No long-term lock-in. No unnecessary overhead.</p>
+      </div>
+      <div class="fit-card">
+        <p class="fit-card-icon">06</p>
+        <p class="fit-card-title">Sector focus</p>
+        <p class="fit-card-desc">Professional services, financial services, and SMEs with a relationship-driven commercial model. The common thread is businesses where the value of relationships and commercial structure is high — and where both are currently underused.</p>
+      </div>
+    </div>
+    <div class="fit-foundation">
+      <div class="fit-foundation-text">
+        <h3>Strong foundations for <em>the next phase.</em></h3>
+        <p>A business that has grown quickly on the strength of its people often finds that the commercial infrastructure did not keep pace. <strong>The pipeline is inconsistent. The network is not activated. The workforce is carrying pressure that shows up in ways that are hard to diagnose.</strong></p>
+        <p style="margin-top:14px;">Finch Theory works with businesses at exactly this inflection point — not to rebuild what already works, but to build the structures that will carry the next phase of growth.</p>
+      </div>
+      <div class="fit-not">
+        <p class="fit-not-label">This is probably not the right fit if</p>
+        <ul>
+          <li>You need a permanent, full-time commercial hire</li>
+          <li>You are a pre-revenue or very early stage business</li>
+          <li>You are looking for a generic management consultancy engagement</li>
+          <li>You want a strategy document rather than hands-on commercial work</li>
+          <li>You have more than 250 people and need enterprise-scale deployment</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- WHO WE HELP -->
 <section id="who">
   <div class="container">
@@ -1017,7 +1106,8 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
           <li><a href="#relcap">Relationship Capital</a></li>
           <li><a href="#services">What we do</a></li>
           <li><a href="#why">Why Finch Theory</a></li>
-          <li><a href="#who">Who we help</a></li>
+          <li><a href="#fit">Is this for us?</a></li>
+    <li><a href="#who">Who we help</a></li>
           <li><a href="#matthew">About</a></li>
           <li><a href="#insights">Insights</a></li>
         </ul>
