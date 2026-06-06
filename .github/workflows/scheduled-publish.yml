@@ -1,0 +1,37 @@
+name: Scheduled publish
+
+on:
+  schedule:
+    # 07:00 UK time (UTC+1 BST / UTC+0 GMT) — runs daily
+    - cron: '0 7 * * *'
+  workflow_dispatch:  # allow manual trigger from GitHub Actions UI
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild insights index (publish due articles)
+        run: python scripts/build-insights-index.py
+
+      - name: Commit and push if index changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-publish: update insights index $(date -u +%Y-%m-%d)"
+            git push
+          fi
