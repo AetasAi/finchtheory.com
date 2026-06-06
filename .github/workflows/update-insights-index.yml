@@ -1,4 +1,4 @@
-name: Update insights index on article push
+﻿name: Update insights index on article push
 
 on:
   push:
@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -30,7 +32,11 @@ jobs:
           git add index.html
           if git diff --staged --quiet; then
             echo "No index changes."
-          else
-            git commit -m "Auto: rebuild insights index after article push"
-            git push
+            exit 0
           fi
+          git commit -m "Auto: rebuild insights index after article push"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && break
+            echo "Push attempt $i failed, retrying..."
+            sleep 3
+          done
