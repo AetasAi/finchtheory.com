@@ -1,0 +1,95 @@
+# Finch Theory — Deploy Notes
+# finchtheory.com | GitHub: AetasAi/finchtheory.com
+
+============================================================
+STANDARD DEPLOY SEQUENCE
+============================================================
+
+1. Make changes locally in C:\Repos\Finch Theory\
+2. Commit in GitHub Desktop with a clear message
+3. Push to main
+4. Wait 2–3 minutes for GitHub Pages to build
+5. ** PURGE CLOUDFLARE CACHE **
+   → Cloudflare dashboard → finchtheory.com zone
+   → Caching → Configuration → Purge Everything
+6. Verify at https://finchtheory.com
+
+============================================================
+REPO STRUCTURE
+============================================================
+
+finchtheory.com/
+├── .github/workflows/
+│   ├── scheduled-publish.yml      Daily 07:00 UK — auto-publishes due articles
+│   └── update-insights-index.yml  Fires on push to insights/*.html
+├── insights/                      All article HTML files
+├── scripts/
+│   ├── build-insights-index.py    Rebuilds insights section of index.html
+│   └── schedule-articles.py      Assigns Tue/Thu publish dates to articles
+├── 404.html                       Custom 404 page
+├── generate-sitemap.py            Run locally to regenerate sitemap.xml
+├── index.html                     Main site (single file, ~1.6MB with embedded images)
+├── llms.txt                       AI/LLM crawler index
+├── privacy.html                   Privacy policy
+├── robots.txt                     Crawler permissions
+└── sitemap.xml                    Updated by generate-sitemap.py
+
+============================================================
+ADDING NEW ARTICLES
+============================================================
+
+1. Build the article HTML (matching the existing article template)
+2. Drop into insights/
+3. Commit and push
+4. update-insights-index.yml fires automatically and adds it to the index
+5. Purge Cloudflare cache
+
+For SCHEDULED articles (future date):
+1. Set datePublished to a future date in the article HTML
+2. Edit scripts/schedule-articles.py — add filename to ARTICLE_ORDER
+3. Run: py scripts\schedule-articles.py
+4. Commit and push all articles at once
+5. scheduled-publish.yml handles the daily release automatically
+6. Purge Cloudflare cache on each publish day (or set Cloudflare to shorter TTL)
+
+============================================================
+UPDATING THE SITEMAP
+============================================================
+
+Run locally from repo root:
+    py generate-sitemap.py
+
+This scans all .html files, excludes future-dated articles and noindex pages,
+and writes a fresh sitemap.xml. Commit and push the result.
+
+============================================================
+CLOUDFLARE CACHE
+============================================================
+
+** ALWAYS purge after pushing changes — otherwise visitors see stale content **
+
+Cloudflare dashboard → finchtheory.com zone
+→ Caching → Configuration → Purge Everything
+
+For scheduled articles, consider setting a shorter Cloudflare TTL on
+publish days, or set a Cache Rule to bypass cache for /#insights.
+
+============================================================
+KEY CONTACTS / ACCOUNTS
+============================================================
+
+- Domain registrar: 123-reg
+- DNS / CDN: Cloudflare
+- Hosting: GitHub Pages (AetasAi/finchtheory.com)
+- Email: matthew@finchtheory.com
+
+============================================================
+GITHUB TOKEN
+============================================================
+
+Personal Access Token stored separately.
+Used for raw file verification via raw.githubusercontent.com.
+Rotate if expired.
+
+============================================================
+Last updated: June 2026
