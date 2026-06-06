@@ -432,71 +432,236 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         "@type": "Organization",
         "@id": "https://finchtheory.com/#organization",
         "name": "Finch Theory",
+        "alternateName": "Finch Theory Consultancy",
         "url": "https://finchtheory.com",
-        "logo": { "@type": "ImageObject", "url": "https://finchtheory.com/icons/favicon.svg" },
-        "description": "A strategic growth consultancy working with ambitious organisations to identify hidden value, activate opportunities and convert potential into measurable growth.",
-        "areaServed": "GB",
-        "knowsAbout": ["Relationship Capital", "Business Development", "Fractional Growth Director", "Workforce Performance", "Strategic Growth Consultancy"]
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://finchtheory.com/og-image.png",
+          "width": 1200,
+          "height": 630
+        },
+        "image": "https://finchtheory.com/og-image.png",
+        "description": "Finch Theory is a London-based strategic growth consultancy working with SMEs and owner-managed businesses to unlock commercial value through relationship capital, workforce performance and fractional growth leadership.",
+        "foundingDate": "2024",
+        "areaServed": {
+          "@type": "Country",
+          "name": "United Kingdom"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "London",
+          "addressCountry": "GB"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "matthew@finchtheory.com",
+          "contactType": "Business enquiries"
+        },
+        "knowsAbout": [
+          "Relationship Capital",
+          "Relationship Capital Consultancy",
+          "How to get more referrals",
+          "How to build a referral network",
+          "Introduction architecture",
+          "Professional network management",
+          "Business Development",
+          "Fractional Growth Director",
+          "Fractional BD Director",
+          "Workforce Performance",
+          "Employee Financial Wellbeing",
+          "Financial Stress in the Workplace",
+          "Strategic Growth Consultancy",
+          "SME Growth Strategy",
+          "Owner-managed Business Growth",
+          "Referral Marketing",
+          "Social Capital"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/finch-theory",
+          "https://aetaspartners.com"
+        ]
       },
       {
         "@type": "WebSite",
         "@id": "https://finchtheory.com/#website",
         "url": "https://finchtheory.com",
         "name": "Finch Theory",
-        "publisher": { "@id": "https://finchtheory.com/#organization" }
+        "description": "Strategic growth consultancy for SMEs and owner-managed businesses",
+        "publisher": { "@id": "https://finchtheory.com/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://finchtheory.com/insights/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       },
       {
         "@type": "WebPage",
         "@id": "https://finchtheory.com/#webpage",
         "url": "https://finchtheory.com/",
-        "name": "Finch Theory · Unlocking the commercial value already inside your business",
-        "description": "Finch Theory works with ambitious organisations to identify hidden value, activate opportunities and convert potential into measurable growth.",
+        "name": "Finch Theory · Strategic Growth Consultancy London",
+        "description": "Finch Theory helps SMEs and owner-managed businesses unlock commercial value through relationship capital, workforce performance and fractional growth leadership.",
         "isPartOf": { "@id": "https://finchtheory.com/#website" },
         "about": { "@id": "https://finchtheory.com/#organization" },
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finchtheory.com/" }]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".hero-headline", ".section-title", ".section-intro"]
         }
       },
       {
         "@type": "Person",
         "@id": "https://finchtheory.com/#matthew",
         "name": "Matthew Steiner",
+        "givenName": "Matthew",
+        "familyName": "Steiner",
         "jobTitle": "Founder",
+        "description": "Matthew Steiner is the founder of Finch Theory, a London-based strategic growth consultancy. With over 20 years across financial advice, investment, strategic partnerships and business development, Matthew specialises in relationship capital, fractional commercial leadership and workforce performance for SMEs and owner-managed businesses.",
         "worksFor": { "@id": "https://finchtheory.com/#organization" },
-        "url": "https://finchtheory.com/",
+        "url": "https://finchtheory.com/#matthew",
         "email": "matthew@finchtheory.com",
-        "knowsAbout": ["Relationship Capital", "Business Development", "Strategic Growth", "Fractional Growth Director", "Workforce Performance"]
+        "image": "https://finchtheory.com/og-image.png",
+        "sameAs": [
+          "https://www.linkedin.com/in/matthewsteiner",
+          "https://aetaspartners.com"
+        ],
+        "knowsAbout": [
+          "Relationship Capital",
+          "Referral Networks",
+          "Introduction Architecture",
+          "Business Development",
+          "Fractional Growth Director",
+          "Workforce Performance",
+          "Employee Financial Wellbeing",
+          "Strategic Growth Consultancy",
+          "SME Growth",
+          "Professional Services Growth",
+          "Behavioural Science in Business",
+          "Financial Services"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "Professional training",
+            "name": "Advanced training in behavioural science, communication and decision-making"
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://finchtheory.com/#relationship-capital-term",
+        "name": "Relationship Capital",
+        "description": "Relationship capital is the aggregate commercial value embedded in professional relationships — the people who know you, trust you, and are positioned to generate introductions, partnerships, referrals or new commercial opportunities for your business. It is distinct from reputation (what people think of you) and networking (the activity of building connections). Relationship capital is specifically the commercial potential sitting within an existing professional network, and the degree to which it is being actively managed and deployed.",
+        "inDefinedTermSet": {
+          "@type": "DefinedTermSet",
+          "name": "Finch Theory Commercial Growth Glossary",
+          "url": "https://finchtheory.com/relationship-capital.html"
+        },
+        "url": "https://finchtheory.com/insights/what-is-relationship-capital.html"
       },
       {
         "@type": "Service",
         "@id": "https://finchtheory.com/#relationship-capital",
-        "name": "Relationship Capital",
-        "description": "Transforming existing relationships into structured commercial assets that generate introductions, partnerships and revenue.",
+        "name": "Relationship Capital Consultancy",
+        "alternateName": ["Referral Network Building", "Introduction Architecture", "Professional Network Activation"],
+        "description": "Identifying, structuring and activating the commercial value embedded in existing professional relationships. Finch Theory maps your network, identifies referral nodes, builds introduction architecture and activates dormant relationships to generate consistent introductions, partnerships and new revenue.",
         "provider": { "@id": "https://finchtheory.com/#organization" },
         "areaServed": "GB",
-        "serviceType": "Strategic Growth Consultancy"
+        "serviceType": "Relationship Capital Consultancy",
+        "url": "https://finchtheory.com/relationship-capital.html",
+        "offers": {
+          "@type": "Offer",
+          "description": "Project and retained engagements. Typically 8-12 weeks for project, 6-12 months retained.",
+          "areaServed": "GB"
+        }
       },
       {
         "@type": "Service",
         "@id": "https://finchtheory.com/#workforce-performance",
         "name": "Workforce Performance",
-        "description": "Removing the hidden commercial cost of financial pressure within your team. Measurable outcomes, not management theory.",
+        "alternateName": ["Employee Financial Wellbeing", "Workforce Financial Wellbeing Programme"],
+        "description": "Identifying and addressing the hidden commercial cost of financial pressure within your workforce. Financial stress costs UK businesses £10.3bn annually in lost productivity. Finch Theory builds structured financial wellbeing programmes that reduce absenteeism, improve retention and generate measurable commercial returns.",
         "provider": { "@id": "https://finchtheory.com/#organization" },
         "areaServed": "GB",
-        "serviceType": "Strategic Growth Consultancy"
+        "serviceType": "Workforce Performance Consultancy"
       },
       {
         "@type": "Service",
         "@id": "https://finchtheory.com/#fractional-growth-director",
         "name": "Fractional Growth Director",
-        "description": "Senior commercial capability on a retained or project basis. Creating opportunities, not just advising on them.",
+        "alternateName": ["Fractional BD Director", "Fractional Business Development Director", "Part-time Commercial Director"],
+        "description": "Senior commercial capability on a retained or project basis for SMEs that need experienced growth leadership without the cost or commitment of a full-time hire. Pipeline strategy, opportunity qualification, pitch support and commercial partnerships. A typical Fractional Growth Director engagement costs a fraction of a permanent hire.",
         "provider": { "@id": "https://finchtheory.com/#organization" },
         "areaServed": "GB",
-        "serviceType": "Strategic Growth Consultancy"
+        "serviceType": "Fractional Commercial Leadership"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://finchtheory.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is relationship capital?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Relationship capital is the aggregate commercial value embedded in your professional relationships — who you know, the strength of those connections, and your ability to convert them into commercial outcomes like introductions, referrals and partnerships. Most businesses have significant relationship capital and manage almost none of it deliberately."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does a Fractional Growth Director do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Fractional Growth Director provides senior commercial capability — pipeline strategy, opportunity qualification, pitch support and commercial partnerships — on a retained or project basis. It gives SMEs and owner-managed businesses the same seniority and commercial judgment as a full-time BD director, without the full-time cost or commitment. Typically engagements run on a 6-12 month retained basis or a defined project scope."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you get more referrals for a professional services business?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The most reliable way to generate more referrals is to build the structural conditions that make introductions natural rather than occasional. This means: defining your introduction trigger (the specific circumstances when a referral makes sense), identifying your referral nodes (the 5-15 contacts most positioned to introduce you), sharpening your proposition so it travels easily, and maintaining reciprocal value in the relationships that matter most. 83% of satisfied clients say they would refer — only 29% do. The gap is architecture, not goodwill."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does relationship capital consultancy cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Finch Theory engagements run on a retained or project basis, defined by outcomes rather than hours. Project engagements typically run 6-12 weeks; retained relationships 6-12 months. The cost is a fraction of a full-time commercial hire (typically £80,000-£130,000 per year) and typically less than the value of a single well-placed introduction. Specific pricing is discussed in an initial conversation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between relationship capital and networking?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Networking is an activity — attending events, building connections, maintaining visibility. Relationship capital is the commercial asset that results from it — the aggregate value sitting in your professional network and your ability to activate it. Most people network. Very few manage relationship capital deliberately. The distinction matters because managing relationship capital requires structure, measurement and strategy, not just presence."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is Finch Theory for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Finch Theory works with SMEs and owner-managed businesses, typically up to 250 people, where the founder or leadership team is still close to the commercial engine. The typical client is generating real revenue with genuine untapped potential, is time-constrained, and does not need or want a full-time commercial hire. Many have grown quickly on the strength of their people and relationships and find that commercial infrastructure did not keep pace. Finch Theory builds the structures that carry the next phase of growth."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does financial stress affect business performance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Financial stress is the most common form of stress in working-age adults in the UK. Around 1 in 4 employees is significantly financially stressed at any time, costing UK employers £10.3bn annually in lost productivity. Financially stressed employees are more likely to be absent, more likely to leave, and spend an average of 2-3 hours per week managing financial concerns during work time. Finch Theory's Workforce Performance service identifies the scale of this problem within your workforce and builds a structured response with measurable commercial outcomes."
+            }
+          }
+        ]
       }
     ]
   }
+
   </script>
 </head>
 <body>
