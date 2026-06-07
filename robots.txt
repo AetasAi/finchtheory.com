@@ -1,28 +1,51 @@
+# Finch Theory — robots.txt
+# https://finchtheory.com
+
 User-agent: *
 Allow: /
 
-User-agent: GPTBot
-Allow: /
-
+# Anthropic (Claude)
 User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: GoogleExtendedBot
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: bingbot
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
+# OpenAI (ChatGPT browsing, SearchGPT)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google (standard + AI Overviews)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Bing / Microsoft Copilot
+User-agent: bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# Cohere
 User-agent: cohere-ai
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://finchtheory.com/sitemap.xml
