@@ -1335,7 +1335,7 @@ hamburger.addEventListener('click', () => {
   document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
 });
 // Close on link click
-document.querySelectorAll('.mobile-link').forEach(link => {
+document.querySelectorAll('.mobile-close').forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('open');
     mobileNav.classList.remove('open');
