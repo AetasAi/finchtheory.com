@@ -464,19 +464,19 @@ document.querySelectorAll('.mobile-close').forEach(a=>a.addEventListener('click'
   var toggle = document.querySelector('.nav-dropdown-toggle');
   var dropdown = toggle && toggle.closest('.nav-dropdown');
   if(!toggle || !dropdown) return;
+  var closeTimer = null;
+  function openMenu(){ clearTimeout(closeTimer); dropdown.classList.add('open'); }
+  function scheduleClose(){ closeTimer = setTimeout(function(){ dropdown.classList.remove('open'); }, 600); }
   toggle.addEventListener('click', function(e){
     e.preventDefault();
     e.stopPropagation();
-    dropdown.classList.toggle('open');
+    dropdown.classList.contains('open') ? scheduleClose() : openMenu();
   });
+  dropdown.addEventListener('mouseenter', openMenu);
+  dropdown.addEventListener('mouseleave', scheduleClose);
   document.addEventListener('click', function(e){
-    if(!dropdown.contains(e.target)){
-      dropdown.classList.remove('open');
-    }
+    if(!dropdown.contains(e.target)){ dropdown.classList.remove('open'); }
   });
-  // Keep hover working on desktop too
-  dropdown.addEventListener('mouseenter', function(){ dropdown.classList.add('open'); });
-  dropdown.addEventListener('mouseleave', function(){ dropdown.classList.remove('open'); });
 })();
 </script>
 </body>
