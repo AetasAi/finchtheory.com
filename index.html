@@ -143,9 +143,9 @@ section { padding:72px 0; }
 /* WHAT WE DO */
 #services { background:var(--warm-white); }
 .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--mid-grey); border:1px solid var(--mid-grey); margin-top:56px; }
-.service-card { background:var(--warm-white); padding:48px 36px; position:relative; transition:background 0.2s; overflow:hidden; }
-.service-card:hover { background:var(--warm-grey); }
-.service-card-bar { position:absolute; top:0; left:0; width:100%; height:2px; background:var(--gold); transform:scaleX(0); transform-origin:left; transition:transform 0.3s ease; }
+.service-card { background:var(--warm-white); padding:48px 36px; position:relative; transition:background 0.2s; overflow:hidden; border:1px solid var(--mid-grey); }
+.service-card:hover { background:var(--warm-grey); border-color:#c8c8d0; }
+.service-card-bar { position:absolute; top:0; left:0; width:100%; height:3px; background:var(--gold); transform:scaleX(0); transform-origin:left; transition:transform 0.35s ease; }
 .service-card:hover .service-card-bar { transform:scaleX(1); }
 .service-num { font-family:'Open Sans',sans-serif; font-size:48px; font-weight:300; color:var(--mid-grey); line-height:1; margin-bottom:20px; transition:color 0.2s; }
 .service-card:hover .service-num { color:var(--gold); }
@@ -158,7 +158,8 @@ section { padding:72px 0; }
 
 /* WHY */
 #why { background:var(--black); }
-.why-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+.why-grid { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
+.why-concepts-col { align-self:start; padding-top:0; }
 .why-title { font-family:'Open Sans',sans-serif; font-weight:300; font-size:40px; line-height:1.15; color:var(--white); margin-bottom:24px; }
 .why-body p { font-size:16px; color:rgba(255,255,255,0.85); line-height:1.85; font-weight:400; margin-bottom:18px; }
 .why-concepts-box { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12); border-radius:2px; padding:8px 0; margin-top:8px; }
@@ -583,7 +584,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
       "@type": "DefinedTerm",
       "@id": "https://finchtheory.com/#relationship-capital-term",
       "name": "Relationship Capital",
-      "description": "Relationship capital is the aggregate commercial value embedded in professional relationships — the people who know you, trust you, and are positioned to generate introductions, partnerships, referrals or new commercial opportunities for your business. It is distinct from reputation (what people think of you) and networking (the activity of building connections). Relationship capital is specifically the commercial potential sitting within an existing professional network, and the degree to which it is being actively managed and deployed.",
+      "description": "Relationship capital is the aggregate commercial value embedded in professional relationships: the people who know you, trust you, and are positioned to generate introductions, partnerships, referrals or new commercial opportunities for your business. It is distinct from reputation (what people think of you) and networking (the activity of building connections). Relationship capital is specifically the commercial potential sitting within an existing professional network, and the degree to which it is being actively managed and deployed.",
       "inDefinedTermSet": {
         "@type": "DefinedTermSet",
         "name": "Finch Theory Commercial Growth Glossary",
@@ -653,7 +654,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
           "name": "What is relationship capital?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Relationship capital is the aggregate commercial value embedded in your professional relationships — who you know, the strength of those connections, and your ability to convert them into commercial outcomes like introductions, referrals and partnerships. Most businesses have significant relationship capital and manage almost none of it deliberately."
+            "text": "Relationship capital is the aggregate commercial value embedded in your professional relationships: who you know, the strength of those connections, and your ability to convert them into commercial outcomes like introductions, referrals and partnerships. Most businesses have significant relationship capital and manage almost none of it deliberately."
           }
         },
         {
@@ -661,7 +662,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
           "name": "What does a Fractional Growth Director do?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A Fractional Growth Director provides senior commercial capability — pipeline strategy, opportunity qualification, pitch support and commercial partnerships — on a retained or project basis. It gives SMEs and owner-managed businesses the same seniority and commercial judgment as a full-time BD director, without the full-time cost or commitment. Typically engagements run on a 6-12 month retained basis or a defined project scope."
+            "text": "A Fractional Growth Director provides senior commercial capability: pipeline strategy, opportunity qualification, pitch support and commercial partnerships, on a retained or project basis. It gives SMEs and owner-managed businesses the same seniority and commercial judgment as a full-time BD director, without the full-time cost or commitment. Typically engagements run on a 6-12 month retained basis or a defined project scope."
           }
         },
         {
@@ -669,7 +670,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
           "name": "How do you get more referrals for a professional services business?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The most reliable way to generate more referrals is to build the structural conditions that make introductions natural rather than occasional. This means: defining your introduction trigger (the specific circumstances when a referral makes sense), identifying your referral nodes (the 5-15 contacts most positioned to introduce you), sharpening your proposition so it travels easily, and maintaining reciprocal value in the relationships that matter most. 83% of satisfied clients say they would refer — only 29% do. The gap is architecture, not goodwill."
+            "text": "The most reliable way to generate more referrals is to build the structural conditions that make introductions natural rather than occasional. This means: defining your introduction trigger (the specific circumstances when a referral makes sense), identifying your referral nodes (the 5-15 contacts most positioned to introduce you), sharpening your proposition so it travels easily, and maintaining reciprocal value in the relationships that matter most. 83% of satisfied clients say they would refer. Only 29% do. The gap is architecture, not goodwill."
           }
         },
         {
@@ -685,7 +686,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
           "name": "What is the difference between relationship capital and networking?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Networking is an activity — attending events, building connections, maintaining visibility. Relationship capital is the commercial asset that results from it — the aggregate value sitting in your professional network and your ability to activate it. Most people network. Very few manage relationship capital deliberately. The distinction matters because managing relationship capital requires structure, measurement and strategy, not just presence."
+            "text": "Networking is an activity: attending events, building connections, maintaining visibility. Relationship capital is the commercial asset that results from it: the aggregate value sitting in your professional network and your ability to activate it. Most people network. Very few manage relationship capital deliberately. The distinction matters because managing relationship capital requires structure, measurement and strategy, not just presence."
           }
         },
         {
@@ -710,7 +711,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
       "@type": "DefinedTerm",
       "@id": "https://finchtheory.com/#term-fractional-growth-director",
       "name": "Fractional Growth Director",
-      "description": "A Fractional Growth Director is a senior commercial leader engaged on a part-time or project basis to own and drive revenue growth for an SME or owner-managed business. Unlike a full-time hire, a fractional engagement provides access to experienced commercial leadership at a fraction of the cost, typically focused on a specific growth challenge — entering a new market, building a referral architecture, or accelerating business development — for a defined period.",
+      "description": "A Fractional Growth Director is a senior commercial leader engaged on a part-time or project basis to own and drive revenue growth for an SME or owner-managed business. Unlike a full-time hire, a fractional engagement provides access to experienced commercial leadership at a fraction of the cost, typically focused on a specific growth challenge: entering a new market, building a referral architecture, or accelerating business development, for a defined period.",
       "inDefinedTermSet": {
         "@type": "DefinedTermSet",
         "name": "Finch Theory Commercial Growth Glossary",
@@ -732,7 +733,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
       "@type": "DefinedTerm",
       "@id": "https://finchtheory.com/#term-relationship-capital-accelerator",
       "name": "Relationship Capital Accelerator",
-      "description": "The Relationship Capital Accelerator is the Finch Theory flagship engagement — a structured programme that helps SMEs, owner-managed businesses and professional practices identify, activate and systematise the commercial value in their professional networks. The programme combines relationship capital auditing, introduction architecture design, and fractional commercial leadership to generate measurable growth from existing relationships.",
+      "description": "The Relationship Capital Accelerator is the Finch Theory flagship engagement: a structured programme that helps SMEs, owner-managed businesses and professional practices identify, activate and systematise the commercial value in their professional networks. The programme combines relationship capital auditing, introduction architecture design, and fractional commercial leadership to generate measurable growth from existing relationships.",
       "inDefinedTermSet": {
         "@type": "DefinedTermSet",
         "name": "Finch Theory Commercial Growth Glossary",
@@ -754,7 +755,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
       "@type": "DefinedTerm",
       "@id": "https://finchtheory.com/#term-commercial-trust",
       "name": "Commercial Trust",
-      "description": "Commercial trust is the confidence that a professional contact will deliver value to a referred party — that their quality, reliability and judgement meet the standard the introducer's own reputation is staked on. It is the prerequisite for introductions and the primary currency of a high-functioning referral network. Commercial trust is built through consistent delivery, visible expertise, and repeated positive interactions over time.",
+      "description": "Commercial trust is the confidence that a professional contact will deliver value to a referred party: that their quality, reliability and judgement meet the standard the introducer's own reputation is staked on. It is the prerequisite for introductions and the primary currency of a high-functioning referral network. Commercial trust is built through consistent delivery, visible expertise, and repeated positive interactions over time.",
       "inDefinedTermSet": {
         "@type": "DefinedTermSet",
         "name": "Finch Theory Commercial Growth Glossary",
@@ -809,7 +810,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
       I help successful founder-led businesses turn what they have built into a structured, scalable and resilient company.
       <em>The value is already inside your business.</em>
     </h1>
-    <p class="hero-proposition">Most businesses are not short of opportunity. They are short of the commercial structure to convert it. Finch Theory identifies where the value sits — in your relationships, your team and your pipeline — and builds and automates the systems to unlock it.</p>
+    <p class="hero-proposition">Most businesses are not short of opportunity. They are short of the commercial structure to convert it. Finch Theory identifies where the value sits: in your relationships, your team and your pipeline. It builds and automates the systems to unlock it.</p>
 
     <div class="hero-actions">
       <a href="/contact.html" class="btn-primary">Unlock your growth</a>
@@ -1031,7 +1032,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
           <p>The Finch Theory is not a philosophy. It is a practical commitment to finding the value that already exists, and building on it.</p>
         </div>
       </div>
-      <div>
+      <div class="why-concepts-col">
         <div class="why-concepts-box">
         <div class="why-concept-item">
           <span class="why-concept-num">I</span>
@@ -1067,26 +1068,26 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
     <div class="eyebrow"><div class="eyebrow-rule"></div><span class="eyebrow-text">Who we help</span></div>
     <h2 class="section-title">Built for businesses that are <em style="font-family:'Open Sans',sans-serif;font-style:italic;font-weight:300;">ready to grow.</em></h2>
     <div class="who-intro">
-      <p>Finch Theory works with <strong>SMEs and owner-managed businesses — typically up to 250 people</strong> — where the founder or leadership team is still close to the commercial engine. Businesses generating real revenue, with genuine untapped potential, that need experienced outside thinking rather than a permanent overhead.</p>
-      <p style="margin-top:14px;">Many have <strong>grown quickly on the strength of their people and relationships</strong> — and find that commercial infrastructure, pipeline structure, and network architecture did not keep pace. The growth was real. The foundations just need catching up to carry the next phase.</p>
+      <p>Finch Theory works with <strong>SMEs and owner-managed businesses, typically up to 250 people, where the founder or leadership team is still close to the commercial engine. Businesses generating real revenue, with genuine untapped potential, that need experienced outside thinking rather than a permanent overhead.</p>
+      <p style="margin-top:14px;">Many have <strong>grown quickly on the strength of their people and relationships</strong>, and find that commercial infrastructure, pipeline structure, and network architecture did not keep pace. The growth was real. The foundations just need catching up to carry the next phase.</p>
     </div>
     <div class="who-grid">
       <div class="who-card">
         <p class="who-icon">i</p>
         <p class="who-title">Founders &amp; Owner-managers</p>
         <p class="who-problem">Revenue is there. Consistent growth is not.</p>
-        <p class="who-desc">You know the opportunity exists but lack the commercial infrastructure to convert it reliably. Finch Theory identifies where value sits and builds the systems to unlock it — without a permanent hire or a strategy document that gathers dust.</p>
+        <p class="who-desc">You know the opportunity exists but lack the commercial infrastructure to convert it reliably. Finch Theory identifies where value sits and builds the systems to unlock it, without a permanent hire or a strategy document that gathers dust.</p>
       </div>
       <div class="who-card">
         <p class="who-icon">ii</p>
         <p class="who-title">Professional Services Firms</p>
         <p class="who-problem">Strong relationships. Inconsistent introductions.</p>
-        <p class="who-desc">You have spent years building a network and a reputation. Neither is being used as the commercial asset it is. Relationship Capital consultancy structures and activates what you already have — turning occasional referrals into a reliable channel.</p>
+        <p class="who-desc">You have spent years building a network and a reputation. Neither is being used as the commercial asset it is. Relationship Capital consultancy structures and activates what you already have, turning occasional referrals into a reliable channel.</p>
       </div>
       <div class="who-card">
         <p class="who-icon">iii</p>
         <p class="who-title">SME Leadership Teams</p>
-        <p class="who-problem">Financial pressure in the workforce — visible in the numbers, invisible in the cause.</p>
+        <p class="who-problem">Financial pressure in the workforce. Visible in the numbers, invisible in the cause..</p>
         <p class="who-desc">Productivity loss, absenteeism and turnover are costing more than the P&amp;L shows. Workforce Performance consultancy identifies the underlying cause and builds a structured response with a measurable commercial return.</p>
       </div>
       <div class="who-card">
@@ -1099,7 +1100,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
     <div class="who-footer">
       <div class="who-footer-panel">
         <p class="who-footer-label">What makes this the right moment</p>
-        <p>Engagements run on a <strong>retained or project basis</strong>, defined by outcomes rather than hours. Typically six to twelve weeks for a project, six to twelve months for a retained relationship. <strong>No long-term lock-in. No unnecessary overhead.</strong> The work is senior and hands-on throughout — not delegated once agreed.</p>
+        <p>Engagements run on a <strong>retained or project basis</strong>, defined by outcomes rather than hours. Typically six to twelve weeks for a project, six to twelve months for a retained relationship. <strong>No long-term lock-in. No unnecessary overhead.</strong> The work is senior and hands-on throughout, not delegated once agreed.</p>
         <p>Two to three new engagements taken on each year. If the timing, sector and purpose are right, the next step is a direct conversation.</p>
       </div>
       <div class="who-footer-panel who-notfit">
@@ -1246,7 +1247,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">Introduction architecture: turning warm contacts into revenue</h3>
-          <p class="insight-desc">The structural difference between an organisation that receives introductions occasionally and one that receives them consistently — and how to build it.</p>
+          <p class="insight-desc">The structural difference between an organisation that receives introductions occasionally and one that receives them consistently, and how to build it.</p>
         </div>
         <div class="insight-action"><span class="insight-time">8 min read</span><span class="insight-read">Read article →</span></div>
       </a>
