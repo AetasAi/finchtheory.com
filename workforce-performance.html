@@ -271,6 +271,15 @@
   color:var(--gold); padding:16px 0 4px; opacity:0.8; list-style:none;
 }
 
+
+/* WP Programme section */
+.wp-programme { margin-top:48px; border-top:1px solid var(--mid-grey); }
+.wp-item { padding:36px 0; border-bottom:1px solid var(--mid-grey); display:grid; grid-template-columns:280px 1fr; gap:48px; align-items:start; }
+.wp-item-title { font-size:11px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--black); padding-top:4px; }
+.wp-item-body { font-size:17px; color:var(--text-secondary); line-height:1.75; font-weight:400; }
+@media(max-width:900px){ .wp-item { grid-template-columns:1fr; gap:12px; padding:28px 0; } }
+@media(max-width:480px){ .wp-item-body { font-size:16px; } }
+
 </style>
 </head>
 <body>
@@ -370,31 +379,22 @@
   <div class="container">
     <div class="eyebrow"><div class="eyebrow-rule"></div><span class="eyebrow-text">What the programme covers</span></div>
     <h2 class="section-title">A structured programme. <em>Built around your business, not a template.</em></h2>
-    <p class="section-intro">Every Workforce Performance engagement is different, because every workforce is different. What follows is the shape of a typical programme. The substance is built around what we find when we look properly at your business.</p>
-    <div class="steps-grid">
-      <div class="step">
-        <div class="step-num">i</div>
-        <div class="step-content">
-          <p class="step-title">Understanding the real cost</p>
-          <p class="step-desc">Before recommending anything, we establish what financial pressure is actually costing your business: absenteeism rates, turnover frequency, productivity data where available, and the qualitative picture from your people. This creates a baseline against which the return on the programme is measured.</p>
-        </div>
+    <p class="section-intro">Every engagement starts with understanding the business properly. The programme that follows is built around what we find, not a predetermined formula. Three things are always covered.</p>
+    <div class="wp-programme">
+      <div class="wp-item">
+        <p class="wp-item-title">Understanding the real cost</p>
+        <p class="wp-item-body">Before recommending anything, I establish what financial pressure is actually costing your business. Absenteeism rates, turnover frequency, productivity data where available, and the qualitative picture from your people. This creates the baseline against which the return on the programme is measured — and it usually reveals more than expected.</p>
       </div>
-      <div class="step">
-        <div class="step-num">ii</div>
-        <div class="step-content">
-          <p class="step-title">Financial education and guidance</p>
-          <p class="step-desc">Structured financial education delivered into the workplace: practical, relevant and calibrated to where your people actually are financially. Where individual regulated advice is needed, it is provided through Aetas Wealth (FCA FRN 458421), the advisory practice I co-founded. Your employees get the right guidance, properly regulated.</p>
-        </div>
+      <div class="wp-item">
+        <p class="wp-item-title">Financial education and regulated guidance</p>
+        <p class="wp-item-body">Structured financial education delivered directly into the workplace: practical, relevant and calibrated to where your people actually are financially. Where individual regulated advice is needed, it is provided through Aetas Wealth (FCA FRN 458421), the practice I co-founded. That means the commercial and advisory strands of the engagement work together, not in parallel.</p>
       </div>
-      <div class="step">
-        <div class="step-num">iii</div>
-        <div class="step-content">
-          <p class="step-title">Benefits review and alignment</p>
-          <p class="step-desc">Most businesses are paying for benefits their employees either do not value or do not know they have. A structured review identifies what is working, what should be replaced, and how to communicate the value of the package more effectively. The result is a better return on what you are already spending.</p>
-        </div>
+      <div class="wp-item">
+        <p class="wp-item-title">Benefits review and alignment</p>
+        <p class="wp-item-body">Most businesses are paying for benefits their employees either do not value or do not know they have. A structured review identifies what is working, what should be replaced, and how to communicate the value of the package more effectively. The result is a better return on what you are already spending, before anything additional is introduced.</p>
       </div>
     </div>
-    <p class="section-note">Financial guidance is delivered in partnership with Aetas Wealth (FCA FRN 458421). I am co-founder and Managing Director of Aetas Wealth, which means the commercial and advisory strands of the engagement work together rather than separately.</p>
+    <p class="section-note">Financial guidance is delivered through Aetas Wealth (FCA FRN 458421). I am co-founder and Managing Director of Aetas Wealth, which means the financial and commercial work is properly integrated rather than handed off.</p>
   </div>
 </section>
 
