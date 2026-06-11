@@ -481,6 +481,18 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
   color:var(--gold); padding:16px 0 4px; opacity:0.8; list-style:none;
 }
 
+
+/* Insights filter pills */
+.insights-filter { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:32px; }
+.filter-pill {
+  background:none; border:1px solid var(--mid-grey); cursor:pointer;
+  font-size:10px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--text-secondary); padding:8px 16px; transition:all 0.2s;
+  font-family:'Open Sans',sans-serif;
+}
+.filter-pill:hover { border-color:var(--black); color:var(--black); }
+.filter-pill.is-active { background:var(--black); color:var(--white); border-color:var(--black); }
+
 </style>
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://finchtheory.com/">
@@ -1269,9 +1281,17 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
       </div>
       <p class="insights-note">Published when there is something useful to say.</p>
     </div>
-    <div class="insights-list">
+        <div class="insights-filter" role="tablist" aria-label="Filter insights by topic">
+      <button class="filter-pill is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter-pill" data-filter="relationship-capital" role="tab" aria-selected="false">Relationship Capital</button>
+      <button class="filter-pill" data-filter="fractional" role="tab" aria-selected="false">Fractional Growth</button>
+      <button class="filter-pill" data-filter="workforce" role="tab" aria-selected="false">Workforce</button>
+      <button class="filter-pill" data-filter="strategy" role="tab" aria-selected="false">Strategy &amp; AI</button>
+    </div>
+
+    <div class="insights-list" id="insights-list">
 <!-- AUTO-INSIGHTS-START -->
-      <a href="/insights/ai-the-subscription-cliff-and-your-business.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="strategy" href="/insights/ai-the-subscription-cliff-and-your-business.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Commentary</p><p class="insight-service">Business Strategy</p></div>
         <div>
           <h3 class="insight-title">AI, the Subscription Cliff and Your Business</h3>
@@ -1279,7 +1299,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">8 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/the-real-cost-of-a-commercial-gap.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="fractional" href="/insights/the-real-cost-of-a-commercial-gap.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Fractional Growth</p></div>
         <div>
           <h3 class="insight-title">The Real Cost of a Commercial Gap</h3>
@@ -1287,7 +1307,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">6 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/what-a-fractional-engagement-looks-like.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="fractional" href="/insights/what-a-fractional-engagement-looks-like.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Fractional Growth</p></div>
         <div>
           <h3 class="insight-title">What a Fractional Engagement Actually Looks Like</h3>
@@ -1295,7 +1315,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">7 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/when-bd-is-the-founders-job.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="relationship-capital" href="/insights/when-bd-is-the-founders-job.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Relationship Capital</p></div>
         <div>
           <h3 class="insight-title">When BD Is the Founder's Job</h3>
@@ -1303,7 +1323,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">7 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/professional-networks-atrophy.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="relationship-capital" href="/insights/professional-networks-atrophy.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Relationship Capital</p></div>
         <div>
           <h3 class="insight-title">Professional Networks Atrophy Without Active Management</h3>
@@ -1311,7 +1331,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">6 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/your-clients-are-your-best-sales-team.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="relationship-capital" href="/insights/your-clients-are-your-best-sales-team.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Relationship Capital</p></div>
         <div>
           <h3 class="insight-title">Your Clients Are Your Best Sales Team</h3>
@@ -1319,7 +1339,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">7 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/why-good-people-leave.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="workforce" href="/insights/why-good-people-leave.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Workforce Performance</p></div>
         <div>
           <h3 class="insight-title">Why Good People Leave</h3>
@@ -1327,7 +1347,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">6 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/financial-stress-at-work-the-employers-blind-spot.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="workforce" href="/insights/financial-stress-at-work-the-employers-blind-spot.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Workforce Performance</p></div>
         <div>
           <h3 class="insight-title">Financial Stress at Work: The Employer's Blind Spot</h3>
@@ -1336,7 +1356,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         <div class="insight-action"><span class="insight-time">7 min read</span><span class="insight-read">Read article →</span></div>
       </a>
 
-      <a href="/insights/seo-basics-for-professional-services.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="strategy" href="/insights/seo-basics-for-professional-services.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">SEO basics for professional services: what actually matters</h3>
@@ -1344,7 +1364,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">8 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/website-as-a-commercial-asset.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="strategy" href="/insights/website-as-a-commercial-asset.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">Your website is a commercial asset. Most businesses do not treat it like one</h3>
@@ -1352,7 +1372,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">6 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/what-is-ai-search-optimisation.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="strategy" href="/insights/what-is-ai-search-optimisation.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">What is AI search optimisation and why does it matter now</h3>
@@ -1360,7 +1380,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">6 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/why-your-website-isnt-generating-leads.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="strategy" href="/insights/why-your-website-isnt-generating-leads.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">Why your website is not generating leads</h3>
@@ -1368,7 +1388,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">7 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/crm-automation-relationship-capital.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="relationship-capital" href="/insights/crm-automation-relationship-capital.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">Your network is an asset. Is it on the balance sheet?</h3>
@@ -1376,7 +1396,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">9 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/relationship-asset-hidden-value.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="relationship-capital" href="/insights/relationship-asset-hidden-value.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">Your network is an asset. Is it on the balance sheet?</h3>
@@ -1384,7 +1404,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">9 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/relationship-capital-workflow.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="relationship-capital" href="/insights/relationship-capital-workflow.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">Your network is an asset. Is it on the balance sheet?</h3>
@@ -1392,7 +1412,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">9 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/what-is-relationship-capital.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="relationship-capital" href="/insights/what-is-relationship-capital.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">Your network is an asset. Is it on the balance sheet?</h3>
@@ -1400,7 +1420,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">9 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/hidden-cost-of-financial-pressure-in-your-workforce.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="workforce" href="/insights/hidden-cost-of-financial-pressure-in-your-workforce.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">The hidden cost of financial pressure in your workforce</h3>
@@ -1408,7 +1428,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">12 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/introduction-architecture.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="relationship-capital" href="/insights/introduction-architecture.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">Introduction architecture: turning warm contacts into revenue</h3>
@@ -1416,7 +1436,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">8 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/why-most-bd-pipelines-fail-before-they-start.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="fractional" href="/insights/why-most-bd-pipelines-fail-before-they-start.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">Why most BD pipelines fail before they start</h3>
@@ -1424,7 +1444,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">7 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/your-network-is-an-asset.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="relationship-capital" href="/insights/your-network-is-an-asset.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">Your network is an asset. Is it on the balance sheet?</h3>
@@ -1432,7 +1452,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">9 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/your-clients-are-your-best-sales-team.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
+      <a data-category="relationship-capital" href="/insights/your-clients-are-your-best-sales-team.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
         <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
         <div>
           <h3 class="insight-title">Your clients are your best sales team. Most businesses never use them</h3>
