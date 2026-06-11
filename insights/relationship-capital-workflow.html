@@ -660,7 +660,7 @@ document.querySelectorAll('.mobile-close').forEach(a => {
   if(!toggle || !dropdown) return;
   var closeTimer = null;
   function openMenu(){ clearTimeout(closeTimer); dropdown.classList.add('open'); }
-  function scheduleClose(){ closeTimer = setTimeout(function(){ dropdown.classList.remove('open'); }, 250); }
+  function scheduleClose(){ closeTimer = setTimeout(function(){ dropdown.classList.remove('open'); }, 600); }
   toggle.addEventListener('click', function(e){
     e.preventDefault();
     e.stopPropagation();
