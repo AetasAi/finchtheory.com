@@ -85,7 +85,7 @@ nav {
 .nav-cta:hover { opacity:0.8; }
 
 /* SHARED */
-section { padding:104px 0; }
+section { padding:72px 0; }
 .container { max-width:1200px; margin:0 auto; padding:0 40px; }
 .eyebrow { display:flex; align-items:center; gap:14px; margin-bottom:24px; }
 .eyebrow-rule { width:24px; height:1px; background:var(--gold); }
@@ -127,7 +127,7 @@ section { padding:104px 0; }
 .pillar-desc { font-size:17px; color:var(--text-secondary); line-height:1.75; font-weight:400; -webkit-font-smoothing:antialiased; }
 
 /* PROBLEM */
-#problem { background:var(--black); padding:80px 0; }
+#problem { background:var(--black); padding:64px 0; }
 .problem-inner { max-width:1120px; margin:0 auto; padding:0 56px; display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
 .problem-left .eyebrow-text { color:rgba(255,255,255,0.35); }
 .problem-title { font-family:'Open Sans',sans-serif; font-weight:300; font-size:40px; line-height:1.15; color:var(--white); margin-bottom:24px; }
@@ -161,11 +161,12 @@ section { padding:104px 0; }
 .why-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
 .why-title { font-family:'Open Sans',sans-serif; font-weight:300; font-size:40px; line-height:1.15; color:var(--white); margin-bottom:24px; }
 .why-body p { font-size:16px; color:rgba(255,255,255,0.85); line-height:1.85; font-weight:400; margin-bottom:18px; }
-.why-concept-item { border-top:1px solid rgba(255,255,255,0.07); padding:22px 0; display:grid; grid-template-columns:44px 1fr; gap:18px; align-items:start; }
-.why-concept-item:last-child { border-bottom:1px solid rgba(255,255,255,0.07); }
-.why-concept-num { font-family:'Open Sans',sans-serif; font-size:16px; font-weight:600; color:var(--gold); line-height:1; padding-top:2px; }
-.why-concept-name { font-size:11px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--white); margin-bottom:7px; }
-.why-concept-desc { font-size:15px; color:rgba(255,255,255,0.80); line-height:1.8; font-weight:400; }
+.why-concepts-box { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12); border-radius:2px; padding:8px 0; margin-top:8px; }
+.why-concept-item { padding:22px 28px; display:grid; grid-template-columns:44px 1fr; gap:18px; align-items:start; border-bottom:1px solid rgba(255,255,255,0.07); }
+.why-concept-item:last-child { border-bottom:none; }
+.why-concept-num { font-family:'Open Sans',sans-serif; font-size:18px; font-weight:700; color:var(--gold); line-height:1; padding-top:4px; }
+.why-concept-name { font-size:11px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--white); margin-bottom:8px; }
+.why-concept-desc { font-size:15px; color:rgba(255,255,255,0.88); line-height:1.8; font-weight:400; }
 .why-closing { margin-top:32px; padding:24px 28px; border-left:1px solid var(--gold); }
 .why-closing p { font-family:'Open Sans',sans-serif; font-size:20px; font-style:italic; font-weight:300; color:rgba(255,255,255,0.85); line-height:1.5; }
 
@@ -844,13 +845,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 </section></div>
 
 <!-- REINFORCEMENT -->
-<section style="background:var(--warm-white);padding:56px 0 48px;">
-  <div class="container" style="max-width:760px;text-align:center;">
-    <p style="font-family:'Open Sans',sans-serif;font-size:28px;font-weight:300;line-height:1.5;color:var(--black);margin-bottom:20px;">Most businesses are not short of opportunity.</p>
-    <p style="font-family:'Open Sans',sans-serif;font-size:22px;font-weight:300;font-style:italic;line-height:1.6;color:var(--text-secondary);margin-bottom:20px;">They are surrounded by it.</p>
-    <p style="font-size:14px;color:var(--text-secondary);line-height:1.9;font-weight:300;max-width:580px;margin:0 auto;">Existing clients. Relationships. Knowledge. People. Ideas. The challenge is identifying it, structuring it and converting it into commercial value.</p>
-  </div>
-</section>
+
 
 <!-- PROBLEM -->
 <section id="problem">
@@ -1037,6 +1032,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
       </div>
       <div>
+        <div class="why-concepts-box">
         <div class="why-concept-item">
           <span class="why-concept-num">I</span>
           <div>
@@ -1057,6 +1053,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
             <p class="why-concept-name">Evolution</p>
             <p class="why-concept-desc">Businesses that grow are not always the strongest. They are the ones that adapt fastest. We find what works and build on it systematically.</p>
           </div>
+        </div>
         </div>
       </div>
     </div>
