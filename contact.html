@@ -196,7 +196,36 @@
       .service-grid{grid-template-columns:1fr;}
       .footer-inner{padding:0 24px;}.footer-top{grid-template-columns:1fr 1fr;gap:32px;}
     }
-  </style>
+  
+/* Nav dropdown */
+.nav-dropdown { position:relative; }
+.nav-dropdown-toggle {
+  cursor:pointer; display:inline-flex; align-items:center; gap:4px;
+  text-decoration:none; font-size:10.5px; font-weight:500; letter-spacing:0.10em;
+  text-transform:uppercase; color:var(--text-secondary); transition:color 0.2s;
+  white-space:nowrap; line-height:1; padding:0; background:none; border:none;
+}
+.nav-dropdown-toggle:hover { color:var(--black); }
+.nav-arrow { font-size:8px; opacity:0.5; transition:transform 0.2s; display:inline-block; line-height:1; }
+.nav-dropdown-menu {
+  display:none; position:absolute; top:calc(100% + 16px); left:50%;
+  transform:translateX(-50%); background:var(--white); border:1px solid var(--mid-grey);
+  border-radius:4px; min-width:240px; padding:6px 0; list-style:none;
+  box-shadow:0 8px 24px rgba(0,0,0,0.12); z-index:999;
+}
+.nav-dropdown-menu li a {
+  display:block; padding:11px 20px; font-size:10.5px; font-weight:500;
+  letter-spacing:0.10em; text-transform:uppercase; color:var(--text-secondary);
+  text-decoration:none; white-space:nowrap; transition:background 0.15s, color 0.15s;
+}
+.nav-dropdown-menu li a:hover { background:var(--warm-grey); color:var(--black); }
+.nav-dropdown.open .nav-dropdown-menu { display:block; }
+.nav-dropdown.open .nav-arrow { transform:rotate(180deg); }
+.mobile-section-label {
+  font-size:9px; letter-spacing:0.18em; text-transform:uppercase;
+  color:var(--gold); padding:16px 0 4px; opacity:0.8; list-style:none;
+}
+</style>
 
   <script type="application/ld+json">
 {
@@ -241,9 +270,15 @@
   </a>
   <ul class="nav-links">
     <li><a href="/#why">Why Finch Theory</a></li>
-    <li><a href="/#who">Who we help</a></li>
-    <li><a href="/#relcap">What we do</a></li>
-    <li><a href="/#services">Services</a></li>
+    <li class="nav-dropdown">
+      <a href="/#services" class="nav-dropdown-toggle">Services <span class="nav-arrow">▾</span></a>
+      <ul class="nav-dropdown-menu">
+        <li><a href="/relationship-capital.html">Relationship Capital</a></li>
+        <li><a href="/workforce-performance.html">Workforce Performance</a></li>
+        <li><a href="/fractional-growth-director.html">Fractional Growth Director</a></li>
+        <li><a href="/website-digital.html">Website &amp; Digital</a></li>
+      </ul>
+    </li>
     <li><a href="/#matthew">About</a></li>
     <li><a href="/#insights">Insights</a></li>
     <li><a href="/contact.html" class="nav-cta">Unlock your growth</a></li>
