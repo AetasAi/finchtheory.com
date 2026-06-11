@@ -685,25 +685,15 @@ document.querySelectorAll('.mobile-close').forEach(a => {
   var dropdown = toggle && toggle.closest('.nav-dropdown');
   if(!toggle || !dropdown) return;
   var closeTimer = null;
-
   function openMenu(){ clearTimeout(closeTimer); dropdown.classList.add('open'); }
-  function closeMenu(){ closeTimer = setTimeout(function(){ dropdown.classList.remove('open'); }, 200); }
-
-  // Click toggle
+  function scheduleClose(){ closeTimer = setTimeout(function(){ dropdown.classList.remove('open'); }, 600); }
   toggle.addEventListener('click', function(e){
     e.preventDefault();
     e.stopPropagation();
-    dropdown.classList.contains('open') ? closeMenu() : openMenu();
+    dropdown.classList.contains('open') ? scheduleClose() : openMenu();
   });
-
-  // Hover on the whole dropdown area (toggle + menu)
   dropdown.addEventListener('mouseenter', openMenu);
-  dropdown.addEventListener('mouseleave', closeMenu);
-
-  // Cancel close if re-entering the dropdown
-  dropdown.addEventListener('mouseenter', function(){ clearTimeout(closeTimer); });
-
-  // Click outside closes
+  dropdown.addEventListener('mouseleave', scheduleClose);
   document.addEventListener('click', function(e){
     if(!dropdown.contains(e.target)){ dropdown.classList.remove('open'); }
   });
