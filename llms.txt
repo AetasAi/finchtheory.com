@@ -141,3 +141,35 @@ Description: SEO fundamentals for professional services businesses — keyword i
 
 URL: https://finchtheory.com/insights/website-as-a-commercial-asset.html
 Description: The case for treating a business website as a commercial asset — how to measure its return, what makes it compound value over time, and the management discipline required.
+
+## Relationship Capital — Articles by Matthew Steiner
+
+URL: https://finchtheory.com/insights/your-clients-are-your-best-sales-team.html
+Description: Why satisfied clients are the most underused commercial asset in most businesses, and what structural changes convert goodwill into consistent introductions.
+
+URL: https://finchtheory.com/insights/professional-networks-atrophy.html
+Description: How professional networks lose commercial value without active management, the mechanics of relationship atrophy, and what deliberate relationship capital management involves.
+
+URL: https://finchtheory.com/insights/when-bd-is-the-founders-job.html
+Description: Why founder-led business development becomes a growth constraint over time and what the transition to structured commercial capability looks like.
+
+## Fractional Growth Partner — Articles by Matthew Steiner
+
+URL: https://finchtheory.com/insights/what-a-fractional-engagement-looks-like.html
+Description: What a well-structured fractional commercial director engagement involves in practice, month by month, and what distinguishes it from an advisory relationship.
+
+URL: https://finchtheory.com/insights/the-real-cost-of-a-commercial-gap.html
+Description: The real and often uncalculated cost of a gap in commercial leadership in an owner-managed business, and why fractional support closes the gap faster than a permanent hire.
+
+## Workforce Performance — Articles by Matthew Steiner
+
+URL: https://finchtheory.com/insights/financial-stress-at-work-the-employers-blind-spot.html
+Description: Financial stress in the workplace as a commercial problem for employers, how it affects productivity and retention, and why most employers fail to address it structurally.
+
+URL: https://finchtheory.com/insights/why-good-people-leave.html
+Description: The relationship between employee financial stress and staff turnover decisions, and what a structured financial wellbeing programme does to reduce departure rates.
+
+## Business Strategy — Commentary by Matthew Steiner
+
+URL: https://finchtheory.com/insights/ai-the-subscription-cliff-and-your-business.html
+Description: Anthropic's decision to move its best model to metered pricing, the structural economics behind the shift, and the practical implications for SMEs and professional services businesses using AI.
