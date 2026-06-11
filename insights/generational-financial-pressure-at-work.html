@@ -271,7 +271,8 @@
   transition:background 0.15s, color 0.15s;
 }
 .nav-dropdown-menu li a:hover { background:var(--warm-grey); color:var(--black); }
-.nav-dropdown:hover .nav-dropdown-menu { display:block; }
+.nav-dropdown.open .nav-dropdown-menu { display:block; }
+.nav-dropdown.open .nav-arrow { transform:rotate(180deg); }
 .mobile-section-label {
   font-size:9px; letter-spacing:0.18em; text-transform:uppercase;
   color:var(--gold); padding:16px 0 4px; opacity:0.8; list-style:none;
@@ -444,6 +445,27 @@ const hamburger=document.getElementById('hamburger');
 const mobileNav=document.getElementById('mobile-nav');
 hamburger.addEventListener('click',()=>mobileNav.classList.toggle('open'));
 document.querySelectorAll('.mobile-close').forEach(a=>a.addEventListener('click',()=>mobileNav.classList.remove('open')));
+</script>
+
+<script>
+(function(){
+  var toggle = document.querySelector('.nav-dropdown-toggle');
+  var dropdown = toggle && toggle.closest('.nav-dropdown');
+  if(!toggle || !dropdown) return;
+  toggle.addEventListener('click', function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    dropdown.classList.toggle('open');
+  });
+  document.addEventListener('click', function(e){
+    if(!dropdown.contains(e.target)){
+      dropdown.classList.remove('open');
+    }
+  });
+  // Keep hover working on desktop too
+  dropdown.addEventListener('mouseenter', function(){ dropdown.classList.add('open'); });
+  dropdown.addEventListener('mouseleave', function(){ dropdown.classList.remove('open'); });
+})();
 </script>
 </body>
 </html>
