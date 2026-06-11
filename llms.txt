@@ -127,3 +127,17 @@ Description: Fractional Growth Director service — senior commercial leadership
 ## Website & Digital
 URL: https://finchtheory.com/website-digital.html
 Description: Website and Digital service — branded, high-performance websites built for SEO, AI discoverability and commercial conversion for SMEs and professional services businesses.
+
+## Website & Digital — Articles
+
+URL: https://finchtheory.com/insights/why-your-website-isnt-generating-leads.html
+Description: Why most SME websites fail to generate leads — the five structural reasons including absent SEO foundations, poor E-E-A-T signals, AI invisibility, weak conversion design and lack of post-launch maintenance.
+
+URL: https://finchtheory.com/insights/what-is-ai-search-optimisation.html
+Description: What AI search optimisation means — structuring a website with llms.txt, ai-agent-summary meta tags, schema markup and clear content so AI assistants can read, trust and cite it.
+
+URL: https://finchtheory.com/insights/seo-basics-for-professional-services.html
+Description: SEO fundamentals for professional services businesses — keyword intent, E-E-A-T signals, technical foundations and content strategy explained for business owners rather than marketers.
+
+URL: https://finchtheory.com/insights/website-as-a-commercial-asset.html
+Description: The case for treating a business website as a commercial asset — how to measure its return, what makes it compound value over time, and the management discipline required.
