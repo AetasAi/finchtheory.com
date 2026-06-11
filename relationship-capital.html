@@ -173,12 +173,40 @@
     .nav-mobile-overlay a{font-size:16px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--black);text-decoration:none;}
     @media(max-width:900px){
       nav{padding:0 24px;}.nav-links{display:none;}.hamburger{display:flex;}
-      .hero-inner{grid-template-columns:1fr;gap:40px;}.hero-inner h1{font-size:40px;}
-      .problem-grid{grid-template-columns:1fr;}.steps-grid{grid-template-columns:1fr 1fr;}
-      .outcomes-grid{grid-template-columns:1fr;}.insight-links{grid-template-columns:1fr;}
+      .nav-mobile-overlay{top:72px;}
+      .hero-inner{grid-template-columns:1fr;gap:32px;}.hero-inner h1{font-size:38px;}
+      .hero-stats{grid-template-columns:1fr;gap:1px;}
+      .prob-stats{grid-template-columns:1fr;}
+      .problem-grid{grid-template-columns:1fr;gap:32px;}
+      .steps-grid{grid-template-columns:1fr 1fr;}
+      .outcomes-grid{grid-template-columns:1fr 1fr;}
+      .insight-links{grid-template-columns:1fr;}
       .footer-top{grid-template-columns:1fr 1fr;gap:32px;}
       .container{padding:0 24px;}.breadcrumb-bar{padding:14px 24px;}
       section{padding:64px 0;}
+      .cta-inner{padding:0 24px;}
+      .page-hero{padding:64px 0 56px;}
+    }
+    @media(max-width:480px){
+      nav{padding:0 16px;height:64px;}
+      .nav-mobile-overlay{top:64px;}
+      .hero-inner{padding:48px 16px 40px;}
+      .hero-inner h1{font-size:30px;}
+      .hero-lead{font-size:16px;}
+      .hero-cta-group{flex-direction:column;gap:12px;align-items:stretch;}
+      .hero-cta-group a{text-align:center;}
+      .prob-stats{grid-template-columns:1fr;}
+      .steps-grid{grid-template-columns:1fr;}
+      .outcomes-grid{grid-template-columns:1fr;}
+      .faq-grid{grid-template-columns:1fr;}
+      .container{padding:0 16px;}
+      .breadcrumb-bar{padding:12px 16px;}
+      section{padding:48px 0;}
+      .cta-inner{padding:0 16px;}
+      .footer-top{grid-template-columns:1fr;}
+      .footer-inner{padding:0 16px;}
+      .section-title{font-size:30px;}
+      .page-hero{padding:48px 0 40px;}
     }
   
 /* Nav dropdown */
