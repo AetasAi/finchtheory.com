@@ -517,6 +517,13 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 }
 
 
+/* PROOF STATS FOUR-COL */
+.proof-stats-four { grid-template-columns: repeat(4,1fr); gap:48px; border-top:1px solid var(--mid-grey); padding-top:48px; }
+.proof-stats-four .proof-stat-label { font-size:11px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--black); margin-bottom:10px; }
+.proof-stats-four .proof-stat-desc { font-size:14px; color:var(--text-secondary); line-height:1.7; font-weight:400; }
+@media (max-width:960px) { .proof-stats-four { grid-template-columns:1fr 1fr; gap:32px; } }
+@media (max-width:480px) { .proof-stats-four { grid-template-columns:1fr; gap:24px; } }
+
 /* OUTCOMES PROOF */
 .outcomes-proof-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px 64px; margin-top:48px; }
 .outcomes-proof-item { display:flex; align-items:flex-start; gap:14px; font-size:17px; color:var(--text-secondary); line-height:1.6; font-weight:400; }
@@ -1105,41 +1112,25 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 <!-- SOCIAL PROOF -->
 <section id="proof">
   <div class="container">
-    <div class="eyebrow"><div class="eyebrow-rule"></div><span class="eyebrow-text">What clients say</span></div>
-    <h2 class="section-title">Results, not reports.</h2>
-    <p class="section-intro">A small number of engagements at any one time means every client receives the full weight of the work.</p>
-    <div class="proof-quotes">
-      <div class="proof-card">
-        <p class="proof-quote">Matthew identified commercial value in our existing relationships that we had completely overlooked. Within six months we had three new strategic partnerships we would not have found through conventional BD.</p>
-        <p class="proof-name" style="color:var(--text-tertiary);font-style:italic;">Testimonial pending</p>
-        <p class="proof-role">Managing Director, Professional Services firm, London</p>
-      </div>
-      <div class="proof-card">
-        <p class="proof-quote">The workforce performance work paid for itself many times over in year one. We had been treating the symptoms for years. Finch Theory identified the cause and built a structure around it.</p>
-        <p class="proof-name" style="color:var(--text-tertiary);font-style:italic;">Testimonial pending</p>
-        <p class="proof-role">Founder, Owner-managed business, South East</p>
-      </div>
-      <div class="proof-card">
-        <p class="proof-quote">Having a Fractional Growth Director function gave us senior commercial thinking at a stage when we could not justify a full-time hire. The pipeline discipline alone changed how we operated as a business.</p>
-        <p class="proof-name" style="color:var(--text-tertiary);font-style:italic;">Testimonial pending</p>
-        <p class="proof-role">CEO, Growing SME, UK</p>
-      </div>
-    </div>
-    <div class="proof-stats">
+    <div class="eyebrow"><div class="eyebrow-rule"></div><span class="eyebrow-text">Commercial outcomes</span></div>
+    <h2 class="section-title">Measured by results,<br>not activity.</h2>
+    <p class="section-intro">Every Finch Theory engagement is structured around outcomes the business can see and quantify. These are the categories of commercial change clients experience.</p>
+    <div class="proof-stats proof-stats-four">
       <div>
-        <p class="proof-stat-num">3<span>x</span></p>
-        <p class="proof-stat-label">Pipeline growth</p>
-        <p class="proof-stat-desc">Average pipeline improvement in the first six months of a Fractional Growth Director engagement</p>
+        <p class="proof-stat-label">Pipeline created</p>
+        <p class="proof-stat-desc">New commercial opportunities identified and activated from within existing relationships and assets</p>
       </div>
       <div>
-        <p class="proof-stat-num">£45<span>k</span></p>
-        <p class="proof-stat-label">Saved in year one</p>
-        <p class="proof-stat-desc">Typical first-year saving through a structured workforce performance engagement</p>
+        <p class="proof-stat-label">Introductions generated</p>
+        <p class="proof-stat-desc">Structured referral channels built to produce consistent, qualified introductions to the right people</p>
       </div>
       <div>
-        <p class="proof-stat-num">20<span>+</span></p>
-        <p class="proof-stat-label">Years experience</p>
-        <p class="proof-stat-desc">Senior financial services and commercial expertise applied directly to every engagement</p>
+        <p class="proof-stat-label">Costs reduced</p>
+        <p class="proof-stat-desc">Financial pressure on the workforce addressed at source, converting a hidden cost into a performance gain</p>
+      </div>
+      <div>
+        <p class="proof-stat-label">Opportunities converted</p>
+        <p class="proof-stat-desc">Senior commercial judgment applied to qualification, pitch and closing, without the overhead of a full-time hire</p>
       </div>
     </div>
   </div>
