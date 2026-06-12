@@ -516,6 +516,14 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
   .scorecard-item { padding: 20px; }
 }
 
+
+/* OUTCOMES PROOF */
+.outcomes-proof-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px 64px; margin-top:48px; }
+.outcomes-proof-item { display:flex; align-items:flex-start; gap:14px; font-size:17px; color:var(--text-secondary); line-height:1.6; font-weight:400; }
+.outcomes-proof-tick { color:var(--gold); font-size:20px; font-weight:700; flex-shrink:0; margin-top:1px; }
+@media (max-width:960px) { .outcomes-proof-grid { grid-template-columns:1fr; gap:16px; } }
+@media (max-width:480px) { .outcomes-proof-item { font-size:16px; } }
+
 </style>
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://finchtheory.com/">
@@ -1065,7 +1073,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         <div class="service-card-bar" style="position:relative;z-index:1;"></div>
         <p class="service-num" style="position:relative;z-index:1;">02</p>
         <p class="service-label" style="position:relative;z-index:1;">Organisational Performance</p>
-        <h3 class="service-name">Recover the value financial pressure is costing you</h3>
+        <h3 class="service-name">Unlock the performance potential inside your workforce</h3>
         <p class="service-desc">Financial pressure within the workforce shows up as reduced productivity, absenteeism, staff turnover and disengagement. A structured approach combining benefits consultancy, employee financial education and ongoing support delivers measurable, documented improvements in performance and retention.</p>
         <div class="service-outcomes">
           <span class="service-outcome">Reduced absenteeism and staff turnover</span>
@@ -1270,6 +1278,23 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
   </div>
 </section>
 
+<!-- OUTCOMES -->
+<section id="outcomes" style="background:var(--cream); border-top:1px solid var(--mid-grey);">
+  <div class="container">
+    <div class="eyebrow"><div class="eyebrow-rule"></div><span class="eyebrow-text">What Finch Theory creates</span></div>
+    <h2 class="section-title">Outcomes that move<br>the business forward.</h2>
+    <p class="section-intro">Every engagement is structured around measurable commercial results, not activity. These are the shifts clients see.</p>
+    <div class="outcomes-proof-grid">
+      <div class="outcomes-proof-item"><span class="outcomes-proof-tick">&#10003;</span><span>Dormant relationships converted into introductions and revenue</span></div>
+      <div class="outcomes-proof-item"><span class="outcomes-proof-tick">&#10003;</span><span>Structured referral channels that generate consistent new opportunities</span></div>
+      <div class="outcomes-proof-item"><span class="outcomes-proof-tick">&#10003;</span><span>Stronger commercial pipeline built from existing assets</span></div>
+      <div class="outcomes-proof-item"><span class="outcomes-proof-tick">&#10003;</span><span>Reduced reliance on cold outreach and external acquisition</span></div>
+      <div class="outcomes-proof-item"><span class="outcomes-proof-tick">&#10003;</span><span>Leadership capacity and commercial thinking without a full-time hire</span></div>
+      <div class="outcomes-proof-item"><span class="outcomes-proof-tick">&#10003;</span><span>Measurable return on employee investment and reduced attrition</span></div>
+    </div>
+  </div>
+</section>
+
 <!-- MATTHEW -->
 <section id="matthew">
   <div class="container">
@@ -1285,9 +1310,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         <div class="matthew-body">
           <p>Matthew founded Finch Theory after recognising that most organisations already possess the ingredients required for growth, but lack the structure, relationships or capacity to unlock them.</p>
           <p>With over twenty years across financial advice, investment, strategic partnerships and business development, Matthew specialises in connecting people, ideas and opportunities to create measurable commercial value. He works directly with founders and leadership teams, combining technical expertise with practical delivery to create outcomes that are measurable from the outset.</p>
-          <p>Building automated digital marketing workflows since 2013, with hands-on experience of Infusionsoft and Go High Level. Finch Theory engagements can include workflow design and automation alongside advisory work where relevant.</p>
-          <p>Advanced training in behavioural science, communication and decision-making supports Finch Theory's understanding of how people, teams and organisations create change. This informs the firm's approach to Workforce Performance, relationship development and building the conditions for lasting commercial partnerships.</p>
-          <p>Matthew combines relationship-led business development with practical AI adoption, helping organisations improve efficiency, identify opportunities and scale commercial activity without increasing operational complexity. Where relevant, Finch Theory engagements can incorporate workflow design, automation and digital transformation alongside advisory work.</p>
+          <p>Advanced training in behavioural science, communication and decision-making informs the firm's approach to relationship development, organisational performance and building conditions for lasting commercial partnerships. Building automated systems since 2013, Matthew applies AI and workflow design where they create real commercial leverage, not operational complexity.</p>
           
         </div>
       </div>
@@ -1552,10 +1575,11 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 <!-- CTA -->
 <div class="cta-section" id="contact">
   <div class="cta-inner">
-    <h2 class="cta-title">The next step is a<br><em>short conversation.</em></h2>
+    <h2 class="cta-title">Start with a<br><em>Growth Opportunity Review.</em></h2>
+    <p class="cta-intro">A focused 45-minute conversation to identify where hidden value sits in your business and what it would take to activate it. No cost. No proposal until we understand your situation.</p>
     <div class="cta-row">
-      <a href="/contact.html" class="btn-primary">Start a conversation</a>
-      <p class="cta-contact">Or write directly: <a href="mailto:matthew@finchtheory.com">matthew@finchtheory.com</a><br>No cost. No obligation. No proposal until we understand your situation.</p>
+      <a href="/contact.html" class="btn-primary">Book your review</a>
+      <p class="cta-contact">Or write directly: <a href="mailto:matthew@finchtheory.com">matthew@finchtheory.com</a><br>Two to three engagements taken on each quarter.</p>
     </div>
   </div>
 </div>
