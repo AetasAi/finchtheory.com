@@ -127,22 +127,23 @@ section { padding:72px 0; }
 .pillar-desc { font-size:17px; color:var(--text-secondary); line-height:1.75; font-weight:400; -webkit-font-smoothing:antialiased; }
 
 /* PROBLEM */
-#problem { background:var(--black); padding:64px 0; }
+#problem { background:var(--warm-grey); padding:64px 0; }
 .problem-inner { max-width:1120px; margin:0 auto; padding:0 56px; display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
-.problem-left .eyebrow-text { color:#96a3b5; }
-.problem-title { font-family:'Open Sans',sans-serif; font-weight:300; font-size:40px; line-height:1.15; color:var(--white); margin-bottom:24px; }
-.problem-body p { font-size:16px; color:#c8d0dc; line-height:1.85; font-weight:400; margin-bottom:16px; }
-.problem-body strong { color:#dadfe8; font-weight:600; }
+.problem-left .eyebrow-text { color:var(--gold); }
+.problem-title { font-family:'Open Sans',sans-serif; font-weight:300; font-size:40px; line-height:1.15; color:var(--black); margin-bottom:24px; }
+.problem-body p { font-size:16px; color:var(--text-secondary); line-height:1.85; font-weight:400; margin-bottom:16px; }
+.problem-body strong { color:var(--black); font-weight:600; }
 .problem-list { display:flex; flex-direction:column; gap:0; }
-.problem-item { border-top:1px solid rgba(255,255,255,0.07); padding:20px 0; display:grid; grid-template-columns:24px 1fr; gap:16px; align-items:start; }
-.problem-item:last-child { border-bottom:1px solid rgba(255,255,255,0.07); }
+.problem-item { border-top:1px solid var(--mid-grey); padding:20px 0; display:grid; grid-template-columns:24px 1fr; gap:16px; align-items:start; }
+.problem-item:last-child { border-bottom:1px solid var(--mid-grey); }
 .problem-item-num { font-family:'Open Sans',sans-serif; font-size:13px; color:var(--gold); font-style:italic; padding-top:1px; }
-.problem-item-text { font-size:15px; color:#c3ccda; line-height:1.75; font-weight:400; }
-.problem-item-text strong { color:#d6dce6; font-weight:600; display:block; font-style:normal; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:4px; font-family:'Open Sans',sans-serif; }
+.problem-item-text { font-size:15px; color:var(--text-secondary); line-height:1.75; font-weight:400; }
+.problem-item-text strong { color:var(--black); font-weight:600; display:block; font-style:normal; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:4px; font-family:'Open Sans',sans-serif; }
 
 /* WHAT WE DO */
 #services { background:var(--warm-white); }
 .services-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--mid-grey); border:1px solid var(--mid-grey); margin-top:56px; }
+.service-card.svc-wide { grid-column:1 / -1; }
 .service-card { background:var(--warm-white); padding:48px 36px; position:relative; transition:background 0.2s; overflow:hidden; border:1px solid var(--mid-grey); }
 .service-card:hover { background:var(--warm-grey); border-color:#c8c8d0; }
 .service-card-bar { position:absolute; top:0; left:0; width:100%; height:3px; background:var(--gold); transform:scaleX(0); transform-origin:left; transition:transform 0.35s ease; }
@@ -268,7 +269,7 @@ section { padding:72px 0; }
 .working-grid { display:grid; grid-template-columns:1fr 1fr; gap:72px; margin-top:56px; }
 .working-body p { font-size:14px; color:var(--text-secondary); line-height:1.9; font-weight:300; margin-bottom:18px; }
 .working-body strong { color:var(--black); font-weight:500; }
-.working-avail { background:var(--black); padding:24px 28px; margin-top:24px; }
+.working-avail { background:var(--warm-grey); border:1px solid var(--mid-grey); padding:24px 28px; margin-top:24px; }
 .working-avail-label { font-size:10px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; }
 .working-avail p { font-size:13px; color:#9dafc0; line-height:1.75; font-weight:300; }
 .working-avail strong { color:#c0c9d5; font-weight:500; }
@@ -280,15 +281,15 @@ section { padding:72px 0; }
 .wtype-desc { font-size:12.5px; color:var(--text-secondary); line-height:1.75; font-weight:300; }
 
 /* CTA */
-.cta-section { background:var(--black); padding:112px 0; position:relative; overflow:hidden; }
-.cta-section::before { content:''; position:absolute; inset:0; background:repeating-linear-gradient(-55deg,transparent,transparent 60px,rgba(255,255,255,0.008) 60px,rgba(255,255,255,0.008) 61px); }
+.cta-section { background:var(--warm-grey); padding:112px 0; position:relative; overflow:hidden; border-top:1px solid var(--mid-grey); }
+.cta-section::before { content:''; display:none; }
 .cta-inner { max-width:1120px; margin:0 auto; padding:0 56px; position:relative; z-index:1; }
-.cta-title { font-family:'Open Sans',sans-serif; font-size:52px; font-weight:300; line-height:1.1; color:var(--white); margin-bottom:48px; max-width:680px; }
-.cta-title em { font-style:italic; color:#9aa4b2; }
+.cta-title { font-family:'Open Sans',sans-serif; font-size:52px; font-weight:300; line-height:1.1; color:var(--black); margin-bottom:48px; max-width:680px; }
+.cta-title em { font-style:italic; color:var(--gold); }
 .cta-row { display:flex; align-items:center; gap:36px; }
-.cta-contact { font-size:12px; color:#96a3b5; font-weight:300; }
-.cta-contact a { color:#9faab8; text-decoration:none; transition:color 0.2s; }
-.cta-contact a:hover { color:var(--white); }
+.cta-contact { font-size:12px; color:var(--text-tertiary); font-weight:400; }
+.cta-contact a { color:var(--gold); text-decoration:none; transition:color 0.2s; }
+.cta-contact a:hover { color:var(--black); }
 
 /* FOOTER */
 footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padding:64px 0 40px; }
@@ -480,20 +481,20 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 
 /* HERO CI */
 .hero-outer { padding-top:72px; }
-.hero-ci { background:var(--black); padding:96px 0 80px; position:relative; overflow:hidden; }
+.hero-ci { background:var(--warm-white); padding:96px 0 80px; position:relative; overflow:hidden; border-bottom:1px solid var(--mid-grey); }
 .hero-ci::before { content:''; position:absolute; inset:0; background:repeating-linear-gradient(-55deg,transparent,transparent 60px,rgba(255,255,255,0.008) 60px,rgba(255,255,255,0.008) 61px); }
 .hero-ci-inner { max-width:1120px; margin:0 auto; padding:0 56px; position:relative; z-index:1; display:grid; grid-template-columns:1.15fr 1fr; gap:80px; align-items:center; }
 .hero-eyebrow { display:flex; align-items:center; gap:16px; margin-bottom:24px; }
 .hero-eyebrow-rule { width:32px; height:1px; background:var(--gold); }
 .hero-eyebrow-text { font-size:10px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); }
-.hero-ci-headline { font-family:'Open Sans',sans-serif; font-size:58px; font-weight:300; line-height:1.05; color:var(--white); margin-bottom:24px; }
-.hero-ci-headline em { font-style:italic; color:#9aa4b2; }
-.hero-ci-sub { font-size:17px; color:#a4b2bf; font-weight:300; line-height:1.85; margin-bottom:36px; max-width:480px; }
+.hero-ci-headline { font-family:'Open Sans',sans-serif; font-size:58px; font-weight:300; line-height:1.05; color:var(--black); margin-bottom:24px; }
+.hero-ci-headline em { font-style:italic; color:var(--gold); }
+.hero-ci-sub { font-size:17px; color:var(--text-secondary); font-weight:400; line-height:1.85; margin-bottom:36px; max-width:480px; }
 .hero-ci-actions { display:flex; gap:16px; flex-wrap:wrap; }
-.hero-ci-aside { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); padding:36px; }
+.hero-ci-aside { background:var(--white); border:1px solid var(--mid-grey); padding:36px; box-shadow:0 2px 16px rgba(0,32,91,0.06); }
 .hero-ci-aside-label { font-size:9px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:24px; }
-.hero-ci-items { display:flex; flex-direction:column; gap:1px; background:rgba(255,255,255,0.08); }
-.hero-ci-item { display:grid; grid-template-columns:28px 1fr; gap:16px; align-items:start; background:rgba(255,255,255,0.03); padding:18px 20px; font-size:13px; color:#a4b2bf; line-height:1.7; font-weight:300; }
+.hero-ci-items { display:flex; flex-direction:column; gap:1px; background:var(--mid-grey); }
+.hero-ci-item { display:grid; grid-template-columns:28px 1fr; gap:16px; align-items:start; background:var(--warm-white); padding:18px 20px; font-size:13px; color:var(--text-secondary); line-height:1.7; font-weight:400; }
 .hero-ci-item-icon { font-family:'Open Sans',sans-serif; font-size:11px; font-weight:600; color:var(--gold); padding-top:2px; }
 
 /* RC DEFINITION */
@@ -507,11 +508,11 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 .rc-list li::before { content:none; }
 
 /* PROBLEM NEW */
-#problem { background:var(--black); padding:88px 0; }
+#problem { background:var(--warm-grey); padding:88px 0; }
 .problem-new-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; margin-top:48px; }
-.problem-new-title { font-family:'Open Sans',sans-serif; font-size:32px; font-weight:300; color:var(--white); line-height:1.3; margin-bottom:24px; }
-.problem-new-body { font-size:14px; color:#a4b2bf; line-height:1.9; font-weight:300; margin-bottom:32px; }
-.problem-new-pull { border-left:2px solid var(--gold); padding-left:24px; font-family:'Open Sans',sans-serif; font-size:18px; font-style:italic; color:#9aa4b2; line-height:1.6; }
+.problem-new-title { font-family:'Open Sans',sans-serif; font-size:32px; font-weight:300; color:var(--black); line-height:1.3; margin-bottom:24px; }
+.problem-new-body { font-size:14px; color:var(--text-secondary); line-height:1.9; font-weight:400; margin-bottom:32px; }
+.problem-new-pull { border-left:2px solid var(--gold); padding-left:24px; font-family:'Open Sans',sans-serif; font-size:18px; font-style:italic; color:var(--text-secondary); line-height:1.6; }
 .problem-new-list-label { font-size:9px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:20px; }
 .problem-new-list { list-style:none; padding:0; display:flex; flex-direction:column; gap:1px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.08); }
 .problem-new-list li { display:grid; grid-template-columns:1fr; background:rgba(255,255,255,0.03); padding:16px 20px; font-size:13.5px; color:#a4b2bf; line-height:1.7; font-weight:300; }
@@ -548,12 +549,12 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 .outcome-col-after .outcome-list li::before { content:''; position:absolute; left:0; top:0.55em; width:6px; height:6px; border-radius:50%; background:var(--gold); }
 
 /* BUILD ONCE */
-#build-once { background:var(--black); padding:96px 0; text-align:center; position:relative; overflow:hidden; }
-#build-once::before { content:''; position:absolute; inset:0; background:repeating-linear-gradient(-55deg,transparent,transparent 60px,rgba(255,255,255,0.008) 60px,rgba(255,255,255,0.008) 61px); }
+#build-once { background:var(--warm-grey); padding:96px 0; text-align:center; position:relative; overflow:hidden; border-top:1px solid var(--mid-grey); }
+#build-once::before { content:''; display:none; }
 .build-once-inner { max-width:600px; margin:0 auto; padding:0 56px; position:relative; z-index:1; }
-.build-once-title { font-family:'Open Sans',sans-serif; font-size:52px; font-weight:300; color:var(--white); line-height:1.1; margin-bottom:20px; }
-.build-once-title em { font-style:italic; color:#9aa4b2; }
-.build-once-body { font-size:15px; color:#a4b2bf; font-weight:300; line-height:1.85; }
+.build-once-title { font-family:'Open Sans',sans-serif; font-size:52px; font-weight:300; color:var(--black); line-height:1.1; margin-bottom:20px; }
+.build-once-title em { font-style:italic; color:var(--gold); }
+.build-once-body { font-size:15px; color:var(--text-secondary); font-weight:400; line-height:1.85; }
 
 /* ── RESPONSIVE OVERRIDES ── */
 @media(max-width:1100px) {
@@ -809,35 +810,6 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 </section>
 
 <!-- WHO THIS IS FOR -->
-<section id="who">
-  <div class="container">
-    <div class="eyebrow"><div class="eyebrow-rule"></div><span class="eyebrow-text">Who this is for</span></div>
-    <h2 class="section-title">Built for established businesses<br><em>with assets they are not yet using.</em></h2>
-    <p class="section-intro">Finch Theory works with businesses that have already built something valuable. The work is about unlocking and systematising what already exists, not starting from scratch.</p>
-    <div class="who-ci-grid">
-      <div class="who-ci-card">
-        <p class="who-ci-num">01</p>
-        <h3 class="who-ci-title">Founder-led businesses</h3>
-        <p class="who-ci-desc">Where the founder holds most of the relationships and growth depends on their personal activity. The business needs infrastructure that works independently of any individual.</p>
-      </div>
-      <div class="who-ci-card">
-        <p class="who-ci-num">02</p>
-        <h3 class="who-ci-title">Professional services firms</h3>
-        <p class="who-ci-desc">Advisory, legal, financial and consultancy businesses where relationships are the product. Often strong on relationships, weak on systems to manage and develop them.</p>
-      </div>
-      <div class="who-ci-card">
-        <p class="who-ci-num">03</p>
-        <h3 class="who-ci-title">Growing SMEs</h3>
-        <p class="who-ci-desc">Businesses with between five and fifty people who have proven their model but lack the commercial infrastructure to scale activity without adding headcount.</p>
-      </div>
-      <div class="who-ci-card">
-        <p class="who-ci-num">04</p>
-        <h3 class="who-ci-title">Businesses after a CRM failure</h3>
-        <p class="who-ci-desc">Companies that have tried CRM before and found it did not stick. Usually the system was right. The surrounding process, training and discipline were missing.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- HOW FINCH THEORY HELPS -->
 <section id="how-ft">
@@ -874,36 +846,73 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 <section id="services">
   <div class="container">
     <div class="eyebrow"><div class="eyebrow-rule"></div><span class="eyebrow-text">What we build</span></div>
-    <h2 class="section-title">How Finch Theory works with you.</h2>
-    <p class="section-intro">Every engagement starts with Relationship Capital: mapping what you already have. From there, Commercial Infrastructure builds the engine your team needs to grow consistently.</p>
+    <h2 class="section-title">Five integrated <em>capability areas.</em></h2>
+    <p class="section-intro">Every engagement starts with Relationship Capital: mapping what you already have. From there, we design and build the connected infrastructure your business needs to grow consistently.</p>
     <div class="services-grid">
       <div class="service-card">
         <div class="service-card-bar"></div>
         <p class="service-num">01</p>
-        <h3 class="service-label">Stage One &#183; Relationship Capital</h3>
-        <h3 class="service-name">Activate the value already inside your network</h3>
-        <p class="service-desc">Every engagement starts here. Relationship Capital maps, structures and activates the commercial assets already inside your business: relationships that can generate introductions, strategic partnerships and new revenue. Before building anything new, we understand what you already have.</p>
+        <h3 class="service-label">Stage One</h3>
+        <h3 class="service-name">Relationship Capital Mapping</h3>
+        <p class="service-desc">Every engagement starts here. We identify, organise and activate the commercial value already inside your business: the clients, contacts, partners and prospects who represent untapped growth.</p>
         <div class="service-outcomes">
-          <span class="service-outcome">Commercial opportunities identified from relationships you already hold</span>
-          <span class="service-outcome">Contacts segmented by value, influence and opportunity</span>
-          <span class="service-outcome">Structured communication strategies to activate dormant relationships</span>
+          <span class="service-outcome">Existing relationships mapped and segmented by value</span>
+          <span class="service-outcome">Untapped commercial opportunities identified</span>
+          <span class="service-outcome">Structured activation strategies to start conversations</span>
         </div>
-        <a href="/relationship-capital.html" class="arrow-link" style="margin-bottom:8px;">Learn more &#8594;</a>
         <a href="/contact.html" class="arrow-link">Start with a conversation</a>
       </div>
       <div class="service-card">
         <div class="service-card-bar"></div>
         <p class="service-num">02</p>
-        <h3 class="service-label">Commercial Infrastructure</h3>
-        <h3 class="service-name">Build the commercial engine your business needs to scale</h3>
-        <p class="service-desc">Commercial Infrastructure designs and builds the systems, CRM and workflows that allow your team to develop business consistently. The engagement has a defined shape: design it, build it, hand it over. The goal is lasting capability, not ongoing dependency.</p>
+        <h3 class="service-label">Infrastructure</h3>
+        <h3 class="service-name">CRM &amp; Sales Infrastructure</h3>
+        <p class="service-desc">We design and implement the CRM, pipeline and reporting systems your team needs to develop business consistently. The right system for your situation, set up properly, with your team trained to use it.</p>
         <div class="service-outcomes">
-          <span class="service-outcome">CRM implemented and your team trained to use it</span>
-          <span class="service-outcome">Automated follow-up and communication workflows</span>
-          <span class="service-outcome">A commercial engine your team can operate independently</span>
+          <span class="service-outcome">CRM selected, configured and implemented</span>
+          <span class="service-outcome">Contact database organised and structured</span>
+          <span class="service-outcome">Sales pipeline and opportunity tracking built</span>
         </div>
-        <a href="/commercial-infrastructure.html" class="arrow-link" style="margin-bottom:8px;">Learn more &#8594;</a>
-        <a href="/contact.html" class="arrow-link">Book a Growth Opportunity Review</a>
+        <a href="/commercial-infrastructure.html" class="arrow-link">Learn more</a>
+      </div>
+      <div class="service-card">
+        <div class="service-card-bar"></div>
+        <p class="service-num">03</p>
+        <h3 class="service-label">Systems</h3>
+        <h3 class="service-name">Automation &amp; Workflow Design</h3>
+        <p class="service-desc">We build the automated processes that remove manual administration, ensure consistent follow-up, and allow your team to spend their time on relationships rather than administration.</p>
+        <div class="service-outcomes">
+          <span class="service-outcome">Automated communication journeys built</span>
+          <span class="service-outcome">Follow-up processes designed and embedded</span>
+          <span class="service-outcome">Technology platforms connected and integrated</span>
+        </div>
+        <a href="/contact.html" class="arrow-link">Start with a conversation</a>
+      </div>
+      <div class="service-card">
+        <div class="service-card-bar"></div>
+        <p class="service-num">04</p>
+        <h3 class="service-label">Communication</h3>
+        <h3 class="service-name">Commercial Communication</h3>
+        <p class="service-desc">We develop the messaging frameworks, engagement sequences and client journeys that keep your business visible and relevant. Structured communication that works independently of individual effort.</p>
+        <div class="service-outcomes">
+          <span class="service-outcome">Messaging frameworks and positioning developed</span>
+          <span class="service-outcome">Client and prospect engagement journeys built</span>
+          <span class="service-outcome">Repeatable communication processes embedded</span>
+        </div>
+        <a href="/contact.html" class="arrow-link">Start with a conversation</a>
+      </div>
+      <div class="service-card svc-wide">
+        <div class="service-card-bar"></div>
+        <p class="service-num">05</p>
+        <h3 class="service-label">Innovation</h3>
+        <h3 class="service-name">AI &amp; Technology Integration</h3>
+        <p class="service-desc">We identify where AI and automation can make a practical difference to your commercial operation: reducing time spent on low-value tasks, improving the speed and quality of client communication, and creating scalable processes that grow with the business.</p>
+        <div class="service-outcomes">
+          <span class="service-outcome">Practical AI opportunities identified and implemented</span>
+          <span class="service-outcome">Productivity tools embedded across the commercial team</span>
+          <span class="service-outcome">Scalable processes that improve as the business grows</span>
+        </div>
+        <a href="/contact.html" class="arrow-link">Start with a conversation</a>
       </div>
     </div>
   </div>
@@ -985,7 +994,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         <p>For interim or non-executive roles where the scope, sector and purpose are a strong match, introductions are welcome. The best route is always a direct conversation first.</p>
         <div class="working-avail">
           <p class="working-avail-label">Current availability</p>
-          <p><strong>Two to three fractional engagements</strong> taken on each year. Typical duration is six to twelve months. Sector focus is SME, professional services and financial services. Write to <a href="mailto:matthew@finchtheory.com" style="color:#a8b5c4;text-decoration:none;">matthew@finchtheory.com</a> with a brief note on the context.</p>
+          <p><strong>Two to three fractional engagements</strong> taken on each year. Typical duration is six to twelve months. Sector focus is SME, professional services and financial services. Write to <a href="mailto:matthew@finchtheory.com" style="color:var(--gold);text-decoration:none;">matthew@finchtheory.com</a> with a brief note on the context.</p>
         </div>
       </div>
       <div>
