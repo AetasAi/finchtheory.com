@@ -63,6 +63,13 @@ body::before {
   position:fixed; inset:0; pointer-events:none; z-index:9999; opacity:0.025;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
 }
+    /* SOUND FAMILIAR ASIDE */
+    .sf-aside { background:var(--warm-grey); border:1px solid var(--mid-grey); border-left:2px solid var(--gold); padding:32px; }
+    .sf-title { font-size:17px; font-weight:400; color:var(--black); margin-bottom:20px; padding-bottom:16px; border-bottom:1px solid var(--mid-grey); line-height:1.4; }
+    .sf-list { list-style:none; display:flex; flex-direction:column; gap:12px; margin-bottom:20px; }
+    .sf-item { display:grid; grid-template-columns:16px 1fr; gap:10px; align-items:start; font-size:14px; color:var(--text-secondary); line-height:1.65; font-weight:400; }
+    .sf-tick { color:var(--gold); font-weight:600; font-size:12px; padding-top:2px; }
+    .sf-close { font-size:14px; color:var(--black); padding-top:16px; border-top:1px solid var(--mid-grey); line-height:1.6; font-weight:500; }
 
 /* NAV */
 nav {
@@ -484,13 +491,13 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 .hero-outer { padding-top:72px; }
 .hero-ci { background:var(--warm-white); padding:96px 0 80px; position:relative; overflow:hidden; border-bottom:1px solid var(--mid-grey); }
 .hero-ci::before { content:''; position:absolute; inset:0; background:repeating-linear-gradient(-55deg,transparent,transparent 60px,rgba(255,255,255,0.008) 60px,rgba(255,255,255,0.008) 61px); }
-.hero-ci-inner { max-width:800px; margin:0 auto; padding:0 56px; position:relative; z-index:1; }
+.hero-ci-inner { max-width:1120px; margin:0 auto; padding:0 56px; position:relative; z-index:1; display:grid; grid-template-columns:1.1fr 1fr; gap:64px; align-items:center; }
 .hero-eyebrow { display:flex; align-items:center; gap:16px; margin-bottom:24px; }
 .hero-eyebrow-rule { width:32px; height:1px; background:var(--gold); }
 .hero-eyebrow-text { font-size:10px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); }
 .hero-ci-headline { font-family:'Open Sans',sans-serif; font-size:50px; font-weight:300; line-height:1.08; color:var(--black); margin-bottom:24px; }
 .hero-ci-headline em { font-style:normal; font-weight:700; color:var(--black); }
-.hero-ci-sub { font-size:17px; color:var(--text-secondary); font-weight:400; line-height:1.85; margin-bottom:36px; max-width:640px; }
+.hero-ci-sub { font-size:17px; color:var(--text-secondary); font-weight:400; line-height:1.85; margin-bottom:36px; max-width:520px; }
 .hero-ci-actions { display:flex; gap:16px; flex-wrap:wrap; }
 
 
@@ -563,6 +570,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
   .pillar-block:nth-child(5) { grid-column:1/-1; }
 }
 @media(max-width:900px) {
+  .hero-ci-inner { grid-template-columns:1fr; gap:40px; }
   .hero-ci-headline { font-size:34px; }
   .rc-def-grid { grid-template-columns:1fr; gap:32px; }
   .problem-new-grid { grid-template-columns:1fr; gap:40px; }
@@ -734,13 +742,24 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         <span class="hero-eyebrow-text">Relationship Capital</span>
       </div>
       <h1 class="hero-ci-headline">Build the commercial operating system<br><em>that turns relationships into revenue.</em></h1>
-      <p class="hero-ci-sub">Most successful businesses already have the relationships, reputation and knowledge needed to create new opportunities.</p>
-        <p class="hero-ci-sub" style="margin-top:12px;">The problem is that this value is often hidden across inboxes, spreadsheets, disconnected systems and people's heads.</p>
-        <p class="hero-ci-sub" style="margin-top:12px;">Finch Theory builds the Commercial Operating System&trade; that organises, activates and converts this Relationship Capital into measurable growth.</p>
+      <p class="hero-ci-sub">Most established businesses have spent years building relationships, reputation and knowledge.</p>
+        <p class="hero-ci-sub" style="margin-top:12px;">The problem is that this value is hidden across inboxes, spreadsheets, old conversations and people's heads.</p>
+        <p class="hero-ci-sub" style="margin-top:12px;">Finch Theory builds the Commercial Operating System&trade; that turns this hidden value into measurable growth.</p>
       <div class="hero-ci-actions">
         <a href="/contact.html" class="btn-primary">Book a Growth Opportunity Review</a>
         <a href="#what-is-rc" class="btn-ghost">See how it works</a>
       </div>
+
+    <div class="sf-aside">
+      <p class="sf-title">Sound familiar?</p>
+      <ul class="sf-list">
+        <li class="sf-item"><span class="sf-tick">&#10003;</span><span>Hundreds of contacts collected over years</span></li>
+        <li class="sf-item"><span class="sf-tick">&#10003;</span><span>Opportunities discussed but never followed up</span></li>
+        <li class="sf-item"><span class="sf-tick">&#10003;</span><span>Valuable relationships owned by individuals</span></li>
+        <li class="sf-item"><span class="sf-tick">&#10003;</span><span>A CRM full of information but not insight</span></li>
+        <li class="sf-item"><span class="sf-tick">&#10003;</span><span>Growth still dependent on a few key people</span></li>
+      </ul>
+      <p class="sf-close">The opportunity is already there. It just needs a system.</p>
     </div>
   </div>
 </section>
@@ -826,8 +845,9 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
       </div>
       <div>
         <div class="eyebrow" style="margin-bottom:20px;"><div class="eyebrow-rule"></div><span class="eyebrow-text">About</span></div>
-        <p style="font-size:18px; font-weight:400; color:var(--text-secondary); line-height:1.6; margin-bottom:20px;">Here is the experience behind the approach.</p>
-        <h2 class="matthew-name">Matthew Steiner</h2>
+        <h2 class="section-title" style="margin-bottom:20px;">Built from experience, <em>not theory.</em></h2>
+        <p style="font-size:16px; color:var(--text-secondary); line-height:1.85; margin-bottom:24px; max-width:480px;">Finch Theory was created after more than 20 years seeing the same challenge inside successful businesses. Growth was rarely limited by opportunity. It was limited by the absence of systems to capture and convert it.</p>
+        <p class="matthew-name">Matthew Steiner</p>
         <p class="matthew-role">Founder, Finch Theory</p>
         <div class="matthew-body">
           <p>Matthew founded Finch Theory after recognising that most organisations already possess the ingredients required for growth, but lack the structure, relationships or capacity to unlock them.</p>
