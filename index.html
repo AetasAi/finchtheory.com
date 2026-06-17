@@ -79,9 +79,9 @@ nav {
 .nav-rule { width:1px; height:32px; background:var(--mid-grey); }
 .nav-wordmark { font-family:'Open Sans',sans-serif; font-weight:600; font-size:13px; letter-spacing:0.28em; text-transform:uppercase; color:var(--black); }
 .nav-links { display:flex; align-items:center; gap:28px; list-style:none; white-space:nowrap; }
-.nav-links a { text-decoration:none; font-size:10.5px; font-weight:500; letter-spacing:0.10em; text-transform:uppercase; color:var(--text-secondary); transition:color 0.2s; white-space:nowrap; }
+.nav-links a { text-decoration:none; font-size:14px; font-weight:500; letter-spacing:0.01em; text-transform:none; color:var(--text-secondary); transition:color 0.2s; white-space:nowrap; }
 .nav-links a:hover { color:var(--black); }
-.nav-cta { background:var(--black) !important; color:var(--white) !important; padding:11px 24px !important; font-size:10.5px !important; letter-spacing:0.16em !important; transition:opacity 0.2s !important;  white-space:nowrap; }
+.nav-cta { background:var(--black) !important; color:var(--white) !important; padding:11px 24px !important; font-size:14px !important; letter-spacing:0.01em !important; transition:opacity 0.2s !important; white-space:nowrap; }
 .nav-cta:hover { opacity:0.8; }
 
 /* SHARED */
@@ -90,7 +90,8 @@ section { padding:72px 0; }
 .eyebrow { display:flex; align-items:center; gap:14px; margin-bottom:24px; }
 .eyebrow-rule { width:24px; height:1px; background:var(--gold); }
 .eyebrow-text { font-size:10.5px; font-weight:500; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); }
-.section-title { font-family:'Open Sans',sans-serif; font-weight:300; font-size:44px; line-height:1.1; color:var(--black); margin-bottom:24px; }
+.section-title { font-family:'Open Sans',sans-serif; font-weight:400; font-size:44px; line-height:1.1; color:var(--black); margin-bottom:24px; }
+.section-title em { font-style:normal; font-weight:700; }
 .section-intro { font-size:16px; color:var(--text-secondary); line-height:1.8; font-weight:400; max-width:560px; }
 .btn-primary { display:inline-block; background:var(--gold); color:var(--black); text-decoration:none; font-size:10.5px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; padding:15px 36px; transition:background 0.25s; }
 .btn-primary:hover { background:var(--gold-light); }
@@ -151,7 +152,7 @@ section { padding:72px 0; }
 .service-num { font-family:'Open Sans',sans-serif; font-size:48px; font-weight:300; color:var(--mid-grey); line-height:1; margin-bottom:20px; transition:color 0.2s; }
 .service-card:hover .service-num { color:var(--gold); }
 .service-label { font-size:10px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:var(--text-tertiary); margin-bottom:10px; }
-.service-name { font-family:'Open Sans',sans-serif; font-size:22px; font-weight:300; line-height:1.3; color:var(--black); margin-bottom:16px; }
+.service-name { font-family:'Open Sans',sans-serif; font-size:22px; font-weight:400; line-height:1.3; color:var(--black); margin-bottom:16px; }
 .service-desc { font-size:17px; color:var(--text-secondary); line-height:1.8; font-weight:400; margin-bottom:24px; }
 .service-outcomes { display:flex; flex-direction:column; gap:6px; margin-bottom:28px; padding-top:16px; border-top:1px solid var(--mid-grey); }
 .service-outcome { font-size:13px; color:var(--text-secondary); display:flex; align-items:center; gap:8px; font-weight:400; }
@@ -284,8 +285,8 @@ section { padding:72px 0; }
 .cta-section { background:var(--warm-grey); padding:112px 0; position:relative; overflow:hidden; border-top:1px solid var(--mid-grey); }
 .cta-section::before { content:''; display:none; }
 .cta-inner { max-width:1120px; margin:0 auto; padding:0 56px; position:relative; z-index:1; }
-.cta-title { font-family:'Open Sans',sans-serif; font-size:52px; font-weight:300; line-height:1.1; color:var(--black); margin-bottom:48px; max-width:680px; }
-.cta-title em { font-style:italic; color:var(--gold); }
+.cta-title { font-family:'Open Sans',sans-serif; font-size:52px; font-weight:400; line-height:1.1; color:var(--black); margin-bottom:48px; max-width:680px; }
+.cta-title em { font-style:normal; font-weight:700; color:var(--black); }
 .cta-row { display:flex; align-items:center; gap:36px; }
 .cta-contact { font-size:12px; color:var(--text-tertiary); font-weight:400; }
 .cta-contact a { color:var(--gold); text-decoration:none; transition:color 0.2s; }
@@ -487,8 +488,8 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 .hero-eyebrow { display:flex; align-items:center; gap:16px; margin-bottom:24px; }
 .hero-eyebrow-rule { width:32px; height:1px; background:var(--gold); }
 .hero-eyebrow-text { font-size:10px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); }
-.hero-ci-headline { font-family:'Open Sans',sans-serif; font-size:58px; font-weight:300; line-height:1.05; color:var(--black); margin-bottom:24px; }
-.hero-ci-headline em { font-style:italic; color:var(--gold); }
+.hero-ci-headline { font-family:'Open Sans',sans-serif; font-size:50px; font-weight:300; line-height:1.08; color:var(--black); margin-bottom:24px; }
+.hero-ci-headline em { font-style:normal; font-weight:700; color:var(--black); }
 .hero-ci-sub { font-size:17px; color:var(--text-secondary); font-weight:400; line-height:1.85; margin-bottom:36px; max-width:480px; }
 .hero-ci-actions { display:flex; gap:16px; flex-wrap:wrap; }
 .hero-ci-aside { background:var(--white); border:1px solid var(--mid-grey); padding:36px; box-shadow:0 2px 16px rgba(0,32,91,0.06); }
@@ -552,8 +553,8 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 #build-once { background:var(--warm-grey); padding:96px 0; text-align:center; position:relative; overflow:hidden; border-top:1px solid var(--mid-grey); }
 #build-once::before { content:''; display:none; }
 .build-once-inner { max-width:600px; margin:0 auto; padding:0 56px; position:relative; z-index:1; }
-.build-once-title { font-family:'Open Sans',sans-serif; font-size:52px; font-weight:300; color:var(--black); line-height:1.1; margin-bottom:20px; }
-.build-once-title em { font-style:italic; color:var(--gold); }
+.build-once-title { font-family:'Open Sans',sans-serif; font-size:52px; font-weight:400; color:var(--black); line-height:1.1; margin-bottom:20px; }
+.build-once-title em { font-style:normal; font-weight:700; color:var(--black); }
 .build-once-body { font-size:15px; color:var(--text-secondary); font-weight:400; line-height:1.85; }
 
 /* ── RESPONSIVE OVERRIDES ── */
@@ -563,7 +564,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 }
 @media(max-width:900px) {
   .hero-ci-inner { grid-template-columns:1fr; gap:40px; }
-  .hero-ci-headline { font-size:38px; }
+  .hero-ci-headline { font-size:34px; }
   .rc-def-grid { grid-template-columns:1fr; gap:32px; }
   .problem-new-grid { grid-template-columns:1fr; gap:40px; }
   .who-ci-grid { grid-template-columns:1fr; }
@@ -576,7 +577,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 @media(max-width:480px) {
   .hero-ci { padding:64px 0 48px; }
   .hero-ci-inner { padding:0 16px; }
-  .hero-ci-headline { font-size:30px; }
+  .hero-ci-headline { font-size:28px; }
   .hero-ci-sub { font-size:15px; }
   .hero-ci-actions { flex-direction:column; }
   .pillars-grid { grid-template-columns:1fr; }
@@ -723,8 +724,8 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         <div class="hero-eyebrow-rule"></div>
         <span class="hero-eyebrow-text">Commercial Infrastructure</span>
       </div>
-      <h1 class="hero-ci-headline">Unlock the value<br>already inside<br><em>your business.</em></h1>
-      <p class="hero-ci-sub">Finch Theory builds the commercial infrastructure that turns relationships into growth.</p>
+      <h1 class="hero-ci-headline">Build the commercial system<br><em>that turns relationships into growth.</em></h1>
+      <p class="hero-ci-sub">Most businesses already have the relationships, reputation and contacts they need to grow. The problem is that this value sits scattered across inboxes, spreadsheets and people's heads. Finch Theory builds the infrastructure to organise it and turn it into measurable commercial activity.</p>
       <div class="hero-ci-actions">
         <a href="/contact.html" class="btn-primary">Book a Growth Opportunity Review</a>
         <a href="#what-is-rc" class="btn-ghost">See how it works</a>
