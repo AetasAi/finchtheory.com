@@ -588,6 +588,18 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
   #what-is-rc,#problem,#who,#how-ft,#services,#outcome,#build-once { padding:64px 0; }
 }
 
+
+/* HOW IT WORKS — 3 steps */
+#how-it-works { background:var(--white); padding:64px 0; border-bottom:1px solid var(--mid-grey); }
+.steps-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--mid-grey); border:1px solid var(--mid-grey); margin-top:48px; }
+.step { background:var(--warm-white); padding:40px 32px; position:relative; }
+.step-num { font-family:'Open Sans',sans-serif; font-size:44px; font-weight:300; color:var(--mid-grey); line-height:1; margin-bottom:20px; transition:color 0.2s; }
+.step:hover .step-num { color:var(--gold); }
+.step-connector { display:none; }
+.step-title { font-family:'Open Sans',sans-serif; font-size:18px; font-weight:600; color:var(--black); margin-bottom:14px; letter-spacing:0.02em; }
+.step-body { font-size:15px; color:var(--text-secondary); line-height:1.8; font-weight:400; }
+@media (max-width:900px) { .steps-grid { grid-template-columns:1fr; } }
+
 </style>
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://finchtheory.com/">
@@ -722,10 +734,12 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
     <div class="hero-ci-text">
       <div class="hero-eyebrow">
         <div class="hero-eyebrow-rule"></div>
-        <span class="hero-eyebrow-text">Commercial Infrastructure</span>
+        <span class="hero-eyebrow-text">Relationship Capital</span>
       </div>
-      <h1 class="hero-ci-headline">Build the commercial system<br><em>that turns relationships into growth.</em></h1>
-      <p class="hero-ci-sub">Most businesses already have the relationships, reputation and contacts they need to grow. The problem is that this value sits scattered across inboxes, spreadsheets and people's heads. Finch Theory builds the infrastructure to organise it and turn it into measurable commercial activity.</p>
+      <h1 class="hero-ci-headline">Build the commercial infrastructure<br><em>that turns relationships into revenue.</em></h1>
+      <p class="hero-ci-sub">Most established businesses already have the relationships, reputation and contacts needed to create new opportunities.</p>
+        <p class="hero-ci-sub" style="margin-top:12px;">The problem is that this value is often hidden across inboxes, spreadsheets, old conversations and people's heads.</p>
+        <p class="hero-ci-sub" style="margin-top:12px;">Finch Theory builds the commercial infrastructure to organise, activate and convert your relationship capital into measurable growth.</p>
       <div class="hero-ci-actions">
         <a href="/contact.html" class="btn-primary">Book a Growth Opportunity Review</a>
         <a href="#what-is-rc" class="btn-ghost">See how it works</a>
@@ -736,7 +750,7 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
       <div class="hero-ci-items">
         <div class="hero-ci-item">
           <span class="hero-ci-item-icon" aria-hidden="true">01</span>
-          <span>Years of accumulated relationships sitting unmanaged and unactivated</span>
+          <span>Years of valuable relationships sitting unmanaged and unused</span>
         </div>
         <div class="hero-ci-item">
           <span class="hero-ci-item-icon" aria-hidden="true">02</span>
@@ -744,13 +758,37 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="hero-ci-item">
           <span class="hero-ci-item-icon" aria-hidden="true">03</span>
-          <span>Growth dependent on individuals rather than a repeatable process</span>
+          <span>Growth dependent on people rather than a repeatable system</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 </div>
+
+<section id="how-it-works">
+  <div class="container">
+    <div class="eyebrow"><div class="eyebrow-rule"></div><span class="eyebrow-text">How it works</span></div>
+    <h2 class="section-title">Three steps to a <em>working commercial engine.</em></h2>
+    <div class="steps-grid">
+      <div class="step">
+        <p class="step-num">01</p>
+        <h3 class="step-title">Identify</h3>
+        <p class="step-body">We map your existing relationships, contacts and commercial opportunities. Most businesses have far more latent value in their network than they realise.</p>
+      </div>
+      <div class="step">
+        <p class="step-num">02</p>
+        <h3 class="step-title">Build</h3>
+        <p class="step-body">We design and implement the systems, processes and communication infrastructure needed to manage and activate those relationships consistently.</p>
+      </div>
+      <div class="step">
+        <p class="step-num">03</p>
+        <h3 class="step-title">Activate</h3>
+        <p class="step-body">Your team has the structure to consistently create conversations, introductions and opportunities from the network you already have.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- WHAT IS RELATIONSHIP CAPITAL -->
 <section id="what-is-rc">
