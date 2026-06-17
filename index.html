@@ -484,19 +484,19 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 .hero-outer { padding-top:72px; }
 .hero-ci { background:var(--warm-white); padding:96px 0 80px; position:relative; overflow:hidden; border-bottom:1px solid var(--mid-grey); }
 .hero-ci::before { content:''; position:absolute; inset:0; background:repeating-linear-gradient(-55deg,transparent,transparent 60px,rgba(255,255,255,0.008) 60px,rgba(255,255,255,0.008) 61px); }
-.hero-ci-inner { max-width:1120px; margin:0 auto; padding:0 56px; position:relative; z-index:1; display:grid; grid-template-columns:1.15fr 1fr; gap:80px; align-items:center; }
+.hero-ci-inner { max-width:800px; margin:0 auto; padding:0 56px; position:relative; z-index:1; }
 .hero-eyebrow { display:flex; align-items:center; gap:16px; margin-bottom:24px; }
 .hero-eyebrow-rule { width:32px; height:1px; background:var(--gold); }
 .hero-eyebrow-text { font-size:10px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); }
 .hero-ci-headline { font-family:'Open Sans',sans-serif; font-size:50px; font-weight:300; line-height:1.08; color:var(--black); margin-bottom:24px; }
 .hero-ci-headline em { font-style:normal; font-weight:700; color:var(--black); }
-.hero-ci-sub { font-size:17px; color:var(--text-secondary); font-weight:400; line-height:1.85; margin-bottom:36px; max-width:480px; }
+.hero-ci-sub { font-size:17px; color:var(--text-secondary); font-weight:400; line-height:1.85; margin-bottom:36px; max-width:640px; }
 .hero-ci-actions { display:flex; gap:16px; flex-wrap:wrap; }
-.hero-ci-aside { background:var(--white); border:1px solid var(--mid-grey); padding:36px; box-shadow:0 2px 16px rgba(0,32,91,0.06); }
-.hero-ci-aside-label { font-size:9px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:24px; }
-.hero-ci-items { display:flex; flex-direction:column; gap:1px; background:var(--mid-grey); }
-.hero-ci-item { display:grid; grid-template-columns:28px 1fr; gap:16px; align-items:start; background:var(--warm-white); padding:18px 20px; font-size:13px; color:var(--text-secondary); line-height:1.7; font-weight:400; }
-.hero-ci-item-icon { font-family:'Open Sans',sans-serif; font-size:11px; font-weight:600; color:var(--gold); padding-top:2px; }
+
+
+
+
+
 
 /* RC DEFINITION */
 #what-is-rc { background:var(--warm-white); padding:88px 0; }
@@ -563,7 +563,6 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
   .pillar-block:nth-child(5) { grid-column:1/-1; }
 }
 @media(max-width:900px) {
-  .hero-ci-inner { grid-template-columns:1fr; gap:40px; }
   .hero-ci-headline { font-size:34px; }
   .rc-def-grid { grid-template-columns:1fr; gap:32px; }
   .problem-new-grid { grid-template-columns:1fr; gap:40px; }
@@ -743,52 +742,9 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         <a href="#what-is-rc" class="btn-ghost">See how it works</a>
       </div>
     </div>
-    <div class="hero-ci-aside">
-      <p class="hero-ci-aside-label">The commercial problem most businesses share</p>
-      <div class="hero-ci-items">
-        <div class="hero-ci-item">
-          <span class="hero-ci-item-icon" aria-hidden="true">01</span>
-          <span>Years of valuable relationships sitting unmanaged and unused</span>
-        </div>
-        <div class="hero-ci-item">
-          <span class="hero-ci-item-icon" aria-hidden="true">02</span>
-          <span>No system to track, follow up or convert that value into revenue</span>
-        </div>
-        <div class="hero-ci-item">
-          <span class="hero-ci-item-icon" aria-hidden="true">03</span>
-          <span>Growth dependent on people rather than a repeatable system</span>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 </div>
-
-<section id="problem">
-  <div class="container">
-    <div class="eyebrow"><div class="eyebrow-rule"></div><span class="eyebrow-text">The challenge</span></div>
-    <div class="problem-new-grid">
-      <div>
-        <h2 class="problem-new-title">Most businesses do not need more contacts.<br>They need a better way to activate the relationships they already have.</h2>
-        <p class="problem-new-body">As businesses grow, opportunities are missed not because the relationships are not there, but because no system exists to manage them. Growth becomes dependent on memory, individual effort and who happens to remember which conversation happened when.</p>
-        <div class="problem-new-pull">
-          When growth depends on individuals rather than infrastructure, it does not scale.
-        </div>
-      </div>
-      <div>
-        <p class="problem-new-list-label">Valuable opportunities are typically lost because</p>
-        <ul class="problem-new-list">
-          <li><span>Nobody owns the follow-up</span></li>
-          <li><span>Valuable contacts are not organised or segmented</span></li>
-          <li><span>Communication is inconsistent or non-existent</span></li>
-          <li><span>Opportunities are not tracked in any system</span></li>
-          <li><span>Knowledge sits with individuals, not the business</span></li>
-          <li><span>Marketing activity is disconnected from relationships</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="what-is-rc">
   <div class="container">
@@ -887,6 +843,41 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
 <!-- WORKING WITH ME -->
 
 <!-- INSIGHTS -->
+<section id="scorecard">
+  <div class="container">
+    <div class="scorecard-eyebrow">Audit your commercial engine</div>
+    <h2 class="section-title">How well does your commercial engine run?</h2>
+    <p class="section-intro">Five questions. Two minutes. A clear picture of where your commercial infrastructure is strong and where the gaps are.</p>
+    <div class="scorecard-grid">
+      <div class="scorecard-item">
+        <div class="scorecard-number">01</div>
+        <div class="scorecard-question">Are your contacts structured, tagged and segmented, or sitting in scattered inboxes and spreadsheets?</div>
+      </div>
+      <div class="scorecard-item">
+        <div class="scorecard-number">02</div>
+        <div class="scorecard-question">Can you name your top 50 relationship assets, the people most likely to introduce, refer or partner?</div>
+      </div>
+      <div class="scorecard-item">
+        <div class="scorecard-number">03</div>
+        <div class="scorecard-question">Do you have a defined introduction pathway, or does it depend on whoever happens to remember?</div>
+      </div>
+      <div class="scorecard-item">
+        <div class="scorecard-number">04</div>
+        <div class="scorecard-question">Is your CRM recording relationships and conversations, or just storing names and companies?</div>
+      </div>
+      <div class="scorecard-item">
+        <div class="scorecard-number">05</div>
+        <div class="scorecard-question">In the last 90 days, have you deliberately converted an existing relationship into a commercial conversation?</div>
+      </div>
+    </div>
+    <div class="scorecard-cta">
+      <p class="scorecard-cta-text">If any of these gave you pause, the infrastructure is the starting point. Book a Growth Opportunity Review to find out where to begin.</p>
+      <a href="contact.html" class="btn-primary">Start a conversation</a>
+    </div>
+  </div>
+</section>
+
+
 <section id="insights">
   <div class="container">
     <div class="insights-header">
@@ -930,183 +921,16 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </div>
         <div class="insight-action"><span class="insight-time">6 min read</span><span class="insight-read">Read article →</span></div>
       </a>
-      <a href="/insights/what-is-ai-search-optimisation.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">What is AI search optimisation and why does it matter now</h3>
-          <p class="insight-desc">AI assistants are now a primary discovery channel for professional services. Most business websites are invisible to them. This explains what AI search optimisation is and why it matters.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">6 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/why-your-website-isnt-generating-leads.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">Why your website is not generating leads</h3>
-          <p class="insight-desc">Most business websites look credible and generate almost nothing. This article identifies the five structural reasons — and what to do about each one.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">7 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/crm-automation-relationship-capital.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">Your network is an asset. Is it on the balance sheet?</h3>
-          <p class="insight-desc">CRM automation is not about replacing human contact. Matthew Steiner explains how the right workflows convert a static contact database into a living relationship engine.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">9 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/relationship-asset-hidden-value.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">Your network is an asset. Is it on the balance sheet?</h3>
-          <p class="insight-desc">The most valuable growth asset in most professional service businesses is already there. Matthew Steiner explains why relationship capital goes unrecognised, unmeasured and unmanaged.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">9 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/relationship-capital-workflow.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">Your network is an asset. Is it on the balance sheet?</h3>
-          <p class="insight-desc">A relationship capital workflow is not a sequence of automated emails. Matthew Steiner explains how to design one that maintains trust, prompts action and operates without constant intervention.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">9 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/what-is-relationship-capital.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">Your network is an asset. Is it on the balance sheet?</h3>
-          <p class="insight-desc">Relationship capital is the accumulated trust, goodwill and influence held within your professional network. Matthew Steiner explains why it is your most valuable and most overlooked business asset.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">9 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/hidden-cost-of-financial-pressure-in-your-workforce.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">The hidden cost of financial pressure in your workforce</h3>
-          <p class="insight-desc">Financial stress inside a workforce quietly costs businesses in productivity, absenteeism and turnover. How to identify the problem, size it, and respond proportionately.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">12 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/introduction-architecture.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">Introduction architecture: turning warm contacts into revenue</h3>
-          <p class="insight-desc">The structural difference between an organisation that receives introductions occasionally and one that receives them consistently, and how to build it.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">8 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/why-most-bd-pipelines-fail-before-they-start.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">Why most BD pipelines fail before they start</h3>
-          <p class="insight-desc">The three structural problems beneath almost every underperforming commercial function, and why hiring a BD director is rarely the fix.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">7 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/your-network-is-an-asset.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">Your network is an asset. Is it on the balance sheet?</h3>
-          <p class="insight-desc">Most businesses hold significant value in professional relationships and do nothing to structure or deploy it. What relationship capital means in practice, and why it matters commercially.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">9 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/the-real-cost-of-a-commercial-gap.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">The real cost of a commercial gap</h3>
-          <p class="insight-desc">The cost of a gap in commercial leadership is rarely calculated. This article examines what commercial drift costs in real terms and why it is harder to recover from than most founders expect.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">6 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/what-a-fractional-engagement-looks-like.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">What a fractional engagement actually looks like from the inside</h3>
-          <p class="insight-desc">What does a fractional commercial director engagement actually involve in practice? Matthew Steiner describes what works, what does not, and what to expect.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">7 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/when-bd-is-the-founders-job.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">When BD is the founder's job, and why that eventually has to change</h3>
-          <p class="insight-desc">Founder-led BD is a feature of early-stage businesses that eventually becomes a constraint. This article examines the signs that the transition is overdue and what the alternatives look like.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">7 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/professional-networks-atrophy.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">Professional networks atrophy without active management</h3>
-          <p class="insight-desc">Professional networks deteriorate without deliberate management. This article explains the mechanics of network atrophy and what active relationship capital management looks like in practice.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">6 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/your-clients-are-your-best-sales-team.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">Your clients are your best sales team. Most businesses never use them</h3>
-          <p class="insight-desc">Satisfied clients are the most underused commercial asset in most businesses. This article explains why they do not introduce you, and what changes that.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">7 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/why-good-people-leave.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">Why good people leave, and what financial pressure has to do with it</h3>
-          <p class="insight-desc">Financial stress is a leading driver of staff turnover in SMEs. This article examines the connection between financial pressure and resignation decisions and what employers can do about it.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">6 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-      <a href="/insights/financial-stress-at-work-the-employers-blind-spot.html" class="insight-row" style="text-decoration:none;display:grid;grid-template-columns:160px 1fr 180px;gap:40px;align-items:start;border-bottom:1px solid var(--mid-grey);padding:32px 0;transition:background 0.15s,padding 0.15s,margin 0.15s;" onmouseover="this.style.background='var(--warm-grey)';this.style.margin='0 -56px';this.style.padding='32px 56px';" onmouseout="this.style.background='';this.style.margin='';this.style.padding='32px 0';">
-        <div><p class="insight-type">Article</p><p class="insight-service">Insights</p></div>
-        <div>
-          <h3 class="insight-title">Financial stress at work: the employer's blind spot</h3>
-          <p class="insight-desc">Financial stress is the most common and least visible drag on workforce performance. This article examines what it costs employers and why most fail to address it structurally.</p>
-        </div>
-        <div class="insight-action"><span class="insight-time">7 min read</span><span class="insight-read">Read article →</span></div>
-      </a>
-    <!-- AUTO-INSIGHTS-END -->
+      
+<div style="margin-top:32px;padding-top:24px;border-top:1px solid var(--mid-grey);">
+  <a href="/insights/" class="arrow-link">View all insights</a>
+</div>
+<!-- AUTO-INSIGHTS-END -->
     </div>
   </div>
 </section>
 
 <!-- SCORECARD -->
-<section id="scorecard">
-  <div class="container">
-    <div class="scorecard-eyebrow">Audit your commercial engine</div>
-    <h2 class="section-title">How well does your commercial engine run?</h2>
-    <p class="section-intro">Five questions. Two minutes. A clear picture of where your commercial infrastructure is strong and where the gaps are.</p>
-    <div class="scorecard-grid">
-      <div class="scorecard-item">
-        <div class="scorecard-number">01</div>
-        <div class="scorecard-question">Are your contacts structured, tagged and segmented, or sitting in scattered inboxes and spreadsheets?</div>
-      </div>
-      <div class="scorecard-item">
-        <div class="scorecard-number">02</div>
-        <div class="scorecard-question">Can you name your top 50 relationship assets, the people most likely to introduce, refer or partner?</div>
-      </div>
-      <div class="scorecard-item">
-        <div class="scorecard-number">03</div>
-        <div class="scorecard-question">Do you have a defined introduction pathway, or does it depend on whoever happens to remember?</div>
-      </div>
-      <div class="scorecard-item">
-        <div class="scorecard-number">04</div>
-        <div class="scorecard-question">Is your CRM recording relationships and conversations, or just storing names and companies?</div>
-      </div>
-      <div class="scorecard-item">
-        <div class="scorecard-number">05</div>
-        <div class="scorecard-question">In the last 90 days, have you deliberately converted an existing relationship into a commercial conversation?</div>
-      </div>
-    </div>
-    <div class="scorecard-cta">
-      <p class="scorecard-cta-text">If any of these gave you pause, the infrastructure is the starting point. Book a Growth Opportunity Review to find out where to begin.</p>
-      <a href="contact.html" class="btn-primary">Start a conversation</a>
-    </div>
-  </div>
-</section>
-
-
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -1126,13 +950,13 @@ footer { background:var(--warm-grey); border-top:1px solid var(--mid-grey); padd
         </ul>
       </div>
       <div class="footer-col">
-        <h3 class="footer-col-title">Solutions</h3>
+        <h3 class="footer-col-title">The System</h3>
         <ul>
-          <li><a href="/growth-system.html">Relationship Capital Mapping</a></li>
-          <li><a href="/growth-system.html">Growth System Build</a></li>
-          <li><a href="/growth-system.html">Automation &amp; AI</a></li>
-          <li><a href="/growth-system.html">Advisory Support</a></li>
-          <li><a href="/privacy.html">Privacy policy</a></li>
+          <li><a href="/growth-system.html">Relationship Intelligence</a></li>
+          <li><a href="/growth-system.html">Data Architecture</a></li>
+          <li><a href="/growth-system.html">Technology Systems</a></li>
+          <li><a href="/growth-system.html">Communication Engine</a></li>
+          <li><a href="/growth-system.html">Commercial Process</a></li>
         </ul>
       </div>
       <div class="footer-col">
