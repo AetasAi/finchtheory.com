@@ -76,19 +76,20 @@
     {"@type":"Question","name":"What is the difference between a referral and an introduction?","acceptedAnswer":{"@type":"Answer","text":"A referral is a recommendation, someone suggesting you speak to a business or person. An introduction is a facilitated connection, someone actively making the contact between you. Both are valuable, but a warm introduction from a trusted common contact carries significantly more weight than a referral alone, because the credibility transfer is immediate and personal."}}]}
   </script>
   <style>
-    :root{--black:#00205B;--white:#fff;--gold:#9A7B3A;--gold-light:#c8a55c;--warm-white:#fafaf7;--warm-grey:#f4f6fb;--mid-grey:#e6e8ee;--text-secondary:#2e3347;--text-tertiary:#4a5269;--text-primary:#1a1f2e;}
+    :root{--black:#00205B;--white:#fff;--gold:#896C2E;--gold-light:#c8a55c;--warm-white:#fafaf7;--warm-grey:#f4f6fb;--mid-grey:#e6e8ee;--text-secondary:#2e3347;--text-tertiary:#4a5269;--text-primary:#1a1f2e;}
     *{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
     body{font-family:'Open Sans',sans-serif;color:var(--black);background:var(--warm-white);font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased;}
+    body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:0.025;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");}
     nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,248,245,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--mid-grey);height:72px;display:flex;align-items:center;justify-content:center;transition:box-shadow 0.3s;}
     .nav-inner{max-width:1360px;width:100%;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:100%;}
     .nav-logo{display:flex;align-items:center;gap:16px;text-decoration:none;}
-    .nav-logo img{height:44px;width:auto;}
+    .nav-logo img{height:48px;width:auto;}
     .nav-rule{width:1px;height:32px;background:var(--mid-grey);}
     .nav-wordmark{font-family:'Open Sans',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--black);}
     .nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
-    .nav-links a{text-decoration:none;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-secondary);transition:color 0.2s;}
+    .nav-links a{text-decoration:none;font-size:14px;font-weight:500;letter-spacing:0.01em;text-transform:none;color:var(--text-secondary);transition:color 0.2s;}
     .nav-links a:hover{color:var(--black);}
-    .nav-cta{background:var(--black)!important;color:var(--white)!important;padding:11px 24px!important;font-size:10px!important;letter-spacing:0.18em!important;}
+    .nav-cta{background:var(--black)!important;color:var(--white)!important;padding:11px 24px!important;font-size:14px!important;letter-spacing:0.01em!important;}
     .breadcrumb-bar{margin-top:72px;background:var(--warm-grey);border-bottom:1px solid var(--mid-grey);padding:14px 56px;}
     .breadcrumb-bar a{font-size:11px;color:var(--text-tertiary);text-decoration:none;font-weight:500;}
     .breadcrumb-bar span{font-size:11px;color:var(--text-tertiary);margin:0 8px;}
