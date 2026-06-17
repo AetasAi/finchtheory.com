@@ -283,16 +283,8 @@
     <span class="nav-wordmark">Finch Theory</span>
   </a>
   <ul class="nav-links">
-    <li><a href="/#rc-feature">Approach</a></li>
-    <li class="nav-dropdown">
-      <a href="/#services" class="nav-dropdown-toggle">Services <span class="nav-arrow">▾</span></a>
-      <ul class="nav-dropdown-menu">
-        <li><a href="/relationship-capital.html">Relationship Capital</a></li>
-        <li><a href="/workforce-performance.html">Workforce Performance</a></li>
-        <li><a href="/fractional-growth-director.html">Fractional Growth Director</a></li>
-      </ul>
-    </li>
-    <li><a href="/#matthew">About</a></li>
+    <li><a href="/#how-it-works">Approach</a></li>
+    <li><a href="/growth-system.html">The System</a></li>
     <li><a href="/#insights">Insights</a></li>
     <li><a href="/contact.html" class="nav-cta">Start a conversation</a></li>
   </ul>
@@ -495,25 +487,5 @@
 </footer>
 
 
-<script>
-(function(){
-  var toggle = document.querySelector('.nav-dropdown-toggle');
-  var dropdown = toggle && toggle.closest('.nav-dropdown');
-  if(!toggle || !dropdown) return;
-  var closeTimer = null;
-  function openMenu(){ clearTimeout(closeTimer); dropdown.classList.add('open'); }
-  function scheduleClose(){ closeTimer = setTimeout(function(){ dropdown.classList.remove('open'); }, 600); }
-  toggle.addEventListener('click', function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    dropdown.classList.contains('open') ? scheduleClose() : openMenu();
-  });
-  dropdown.addEventListener('mouseenter', openMenu);
-  dropdown.addEventListener('mouseleave', scheduleClose);
-  document.addEventListener('click', function(e){
-    if(!dropdown.contains(e.target)){ dropdown.classList.remove('open'); }
-  });
-})();
-</script>
 </body>
 </html>
