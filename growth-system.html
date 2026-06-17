@@ -287,6 +287,7 @@
     @media(max-width:900px){
       .two-col-prose{grid-template-columns:1fr;gap:32px;}
       .ba-grid{grid-template-columns:1fr;}
+      .why-grid{grid-template-columns:1fr;}
       .capability-grid{grid-template-columns:1fr;}
       .capability-card.full-width{grid-column:auto;}
     }
@@ -308,6 +309,19 @@
     .ba-item-yes{color:var(--black);font-weight:400;}
     .ba-icon{font-size:12px;padding-top:3px;line-height:1;}
     .ba-icon-yes{color:var(--gold);}
+    /* WHY COS */
+    #why-cos{background:var(--warm-grey);}
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--mid-grey);border:1px solid var(--mid-grey);margin-top:40px;}
+    .why-col{padding:36px 32px;}
+    .why-col-has{background:var(--warm-white);}
+    .why-col-missing{background:var(--warm-grey);}
+    .why-col-label{font-size:10px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-tertiary);margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--mid-grey);}
+    .why-list{list-style:none;display:flex;flex-direction:column;gap:14px;}
+    .why-list li{display:grid;grid-template-columns:20px 1fr;gap:12px;align-items:start;font-size:15px;line-height:1.65;color:var(--text-secondary);font-weight:300;}
+    .why-icon{font-size:12px;padding-top:3px;line-height:1;font-weight:600;}
+    .why-icon-yes{color:var(--gold);}
+    .why-icon-no{color:var(--text-tertiary);}
+    .why-conclusion{font-size:20px;font-weight:300;color:var(--black);margin-top:40px;border-left:2px solid var(--gold);padding-left:24px;line-height:1.5;}
 
   </style>
 </head>
@@ -352,6 +366,37 @@
       <p class="hero-aside-body">Most businesses have Relationship Capital. The relationships, reputation and knowledge built over years. What they are missing is the operating system to organise, activate and convert that value into consistent commercial growth.</p>
       <p class="hero-aside-body" style="margin-top:16px; font-weight:500; color:var(--black);">Finch Theory builds the system that unlocks it.</p>
     </div>
+  </div>
+</section>
+
+
+<!-- WHY A COMMERCIAL OPERATING SYSTEM -->
+<section id="why-cos">
+  <div class="container">
+    <div class="eyebrow"><div class="eyebrow-rule"></div><span class="eyebrow-text">The gap</span></div>
+    <h2 class="section-title">Every function has a system. <em>Growth is the exception.</em></h2>
+    <p class="section-intro">Established businesses invest in systems for every part of the operation. Commercial growth is almost always the one function still managed through memory, habit and individual effort.</p>
+    <div class="why-grid">
+      <div class="why-col why-col-has">
+        <p class="why-col-label">What every established business has</p>
+        <ul class="why-list">
+          <li><span class="why-icon why-icon-yes">&#10003;</span><span>Financial systems — accounting, reporting, forecasting</span></li>
+          <li><span class="why-icon why-icon-yes">&#10003;</span><span>Operational systems — delivery, production, service</span></li>
+          <li><span class="why-icon why-icon-yes">&#10003;</span><span>HR systems — recruitment, performance, compliance</span></li>
+          <li><span class="why-icon why-icon-yes">&#10003;</span><span>IT systems — infrastructure, security, support</span></li>
+        </ul>
+      </div>
+      <div class="why-col why-col-missing">
+        <p class="why-col-label">How commercial growth is typically managed</p>
+        <ul class="why-list">
+          <li><span class="why-icon why-icon-no">&#10005;</span><span>Memory and individual relationships</span></li>
+          <li><span class="why-icon why-icon-no">&#10005;</span><span>Disconnected spreadsheets and inboxes</span></li>
+          <li><span class="why-icon why-icon-no">&#10005;</span><span>Inconsistent communication and follow-up</span></li>
+          <li><span class="why-icon why-icon-no">&#10005;</span><span>Individual effort rather than repeatable process</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="why-conclusion">That is the gap the Commercial Operating System closes.</p>
   </div>
 </section>
 
@@ -418,7 +463,7 @@
   <div class="container">
     <div class="eyebrow"><div class="eyebrow-rule"></div><span class="eyebrow-text">Five foundations</span></div>
     <h2 class="section-title">Built around five integrated <em>components.</em></h2>
-    <p class="section-intro">Each foundation can be delivered individually, but they are designed to work as a connected whole. Together they form the Commercial Operating System&trade;.</p>
+    <p class="section-intro">Each foundation can be delivered individually, but they are designed to work as a connected whole. Together they form the system.</p>
   </div>
   <div class="container" style="margin-top:48px;">
     <div class="capability-grid">
@@ -426,7 +471,7 @@
       <div class="capability-card">
         <p class="capability-label">Foundation 01</p>
         <h3 class="capability-title">Relationship Intelligence</h3>
-        <p style="font-size:14px; color:var(--gold); font-weight:500; margin-bottom:16px; font-style:italic;">Understand who and what you know.</p>
+        <p style="font-size:14px; color:var(--gold); font-weight:500; margin-bottom:16px; font-style:italic;">Map the relationships and opportunities already inside your business.</p>
         <ul class="capability-list">
           <li>Commercial relationship audit across clients, contacts, partners and network</li>
           <li>Hidden opportunity identification within your existing relationships</li>
@@ -438,7 +483,7 @@
       <div class="capability-card">
         <p class="capability-label">Foundation 02</p>
         <h3 class="capability-title">Data Architecture</h3>
-        <p style="font-size:14px; color:var(--gold); font-weight:500; margin-bottom:16px; font-style:italic;">Turn information into a business asset.</p>
+        <p style="font-size:14px; color:var(--gold); font-weight:500; margin-bottom:16px; font-style:italic;">Move from disconnected information to structured commercial intelligence.</p>
         <ul class="capability-list">
           <li>CRM selection and design — the right system for your situation, properly configured</li>
           <li>Contact database structure — organised by company, relationship and opportunity</li>
@@ -450,7 +495,7 @@
       <div class="capability-card">
         <p class="capability-label">Foundation 03</p>
         <h3 class="capability-title">Technology Infrastructure</h3>
-        <p style="font-size:14px; color:var(--gold); font-weight:500; margin-bottom:16px; font-style:italic;">Connect the tools.</p>
+        <p style="font-size:14px; color:var(--gold); font-weight:500; margin-bottom:16px; font-style:italic;">Build the digital infrastructure that supports your people and processes.</p>
         <ul class="capability-list">
           <li>System integration — CRM connected with your existing tools and workflows</li>
           <li>Automation design — manual administration removed from routine commercial activity</li>
@@ -462,7 +507,7 @@
       <div class="capability-card">
         <p class="capability-label">Foundation 04</p>
         <h3 class="capability-title">Communication Engine</h3>
-        <p style="font-size:14px; color:var(--gold); font-weight:500; margin-bottom:16px; font-style:italic;">Create consistent engagement.</p>
+        <p style="font-size:14px; color:var(--gold); font-weight:500; margin-bottom:16px; font-style:italic;">Create consistent, relevant engagement so valuable relationships are maintained and developed.</p>
         <ul class="capability-list">
           <li>Messaging framework — clear, consistent positioning for client and prospect communication</li>
           <li>Engagement journeys — structured sequences that maintain visibility without manual effort</li>
@@ -474,7 +519,7 @@
       <div class="capability-card full-width">
         <p class="capability-label">Foundation 05</p>
         <h3 class="capability-title">Commercial Process</h3>
-        <p style="font-size:14px; color:var(--gold); font-weight:500; margin-bottom:16px; font-style:italic;">Make growth repeatable.</p>
+        <p style="font-size:14px; color:var(--gold); font-weight:500; margin-bottom:16px; font-style:italic;">Make growth repeatable rather than dependent on individual effort.</p>
         <ul class="capability-list" style="columns:2; column-gap:48px;">
           <li>Follow-up system — defined ownership and timing for every commercial opportunity</li>
           <li>Pipeline management — weekly and monthly rhythms that keep opportunities moving</li>
