@@ -77,6 +77,8 @@
     .nav-links a{text-decoration:none;font-size:14px;font-weight:500;letter-spacing:0.01em;white-space:nowrap;text-transform:none;color:var(--text-secondary);transition:color 0.2s;}
     .nav-links a:hover,.nav-links a.active{color:var(--black);}
     .nav-cta{background:var(--black)!important;color:var(--white)!important;padding:11px 24px!important;font-size:14px!important;letter-spacing:0.01em!important;transition:opacity 0.2s!important;}
+    .btn-gold{display:inline-block;background:var(--gold);color:var(--white);text-decoration:none;padding:15px 36px;font-size:10.5px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;transition:opacity 0.2s;}
+    .btn-gold:hover{opacity:0.85;}
     .breadcrumb-bar{margin-top:72px;background:var(--warm-grey);border-bottom:1px solid var(--mid-grey);padding:14px 56px;}
     .breadcrumb-bar a{font-size:11px;color:var(--text-tertiary);text-decoration:none;font-weight:500;}
     .breadcrumb-bar a:hover{color:var(--black);}
@@ -470,8 +472,8 @@
 </section>
 
 <!-- CTA -->
-<section id="cta-approach">
-  <div class="cta-inner" style="max-width:800px; margin:0 auto; padding:96px 40px; text-align:center;">
+<section id="cta-approach" style="background:var(--black);position:relative;overflow:hidden;"><div style="position:absolute;inset:0;background:repeating-linear-gradient(-55deg,transparent,transparent 60px,rgba(255,255,255,0.008) 60px,rgba(255,255,255,0.008) 61px);pointer-events:none;"></div>
+  <div class="cta-inner" style="max-width:800px; margin:0 auto; padding:96px 40px; text-align:center; position:relative; z-index:1;">
     <div class="eyebrow" style="justify-content:center;"><div class="eyebrow-rule"></div><span class="eyebrow-text">Start here</span><div class="eyebrow-rule"></div></div>
     <h2 class="section-title" style="margin-top:24px;">Start with a <em>Commercial Operating System&#8482; Review.</em></h2>
     <p class="section-intro" style="margin:20px auto 36px; max-width:560px; text-align:center;">A structured diagnostic that maps your commercial position across all five foundations. We identify what is in place, what is missing and where the highest-value work sits. Face to face or Zoom, 90 minutes.</p>
