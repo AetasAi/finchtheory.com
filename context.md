@@ -72,7 +72,7 @@ Matthew Steiner has 20+ years across financial advice, investment, strategic par
 
 At 19, Matthew was diagnosed with Acute Lymphoblastic Leukaemia and was one of the earliest stem cell transplant recipients in the UK. He supports the Bud Flanagan Leukaemia Fund and the Royal Marsden Hospital.
 
-LinkedIn: https://www.linkedin.com/in/matthewsteiner
+LinkedIn: https://www.linkedin.com/in/matthewrsteiner
 
 ## Insights library
 
